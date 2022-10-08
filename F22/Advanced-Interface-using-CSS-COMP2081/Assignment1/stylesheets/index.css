@@ -1,97 +1,184 @@
-html {}
-
-body {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 75% 10%;
-    grid-template-areas: "header""main""footer";
-    overflow-x: hidden;
-}
-
-
-/* header css*/
-
-header {
-    display: flex;
-    position: fixed;
-    height: 15%;
-    grid-area: header;
-    background-color: #404946;
-    z-index: 100;
-}
-
-header>section:nth-of-type(1) {
-    width: 7.5vw;
-}
-
-header>section:nth-of-type(2) {
-    width: 57.5vw;
-    display: flex;
-    justify-content: center;
-}
-
-header>section:nth-of-type(3) {
-    width: 35vw;
-}
-
-header>section>a>img {
-    width: auto;
-    height: 100%;
-}
-
-header>section>a>img:hover {
-    scale: 0.9;
-}
-
-header>section>nav {
-    height: 90%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    gap: 2%;
-}
-
-header>section>nav>a {
-    background-color: #c3deb5;
-    padding: 10px 10px;
-    border-radius: 50%;
-    text-decoration: none;
-    color: #404946;
-}
-
-header>section>nav>a:hover {
-    background-color: #abc59fd8;
-    scale: 1.1;
-}
-
-
-/* footer styles */
-
-main {
-    margin-top: -1%;
-    grid-area: main;
-    height: 200vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    z-index: 1;
-    background-image: radial-gradient(#c3deb5 5%, #b1e4a9 15%, #b0e6a8 35%, #9ecd99 50%);
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: """""";
-}
-
-
-/* footer styles */
-
-footer {
-    grid-area: footer;
-    position: fixed;
-    height: 10%;
-    width: 100vw;
-    z-index: 100;
-    top: 90%;
-    background-color: #404946ee;
-}
+    html: {}
+    
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% auto 10%;
+        grid-template-areas: "header""main""footer";
+        background-image: radial-gradient(#c3deb5 5%, #b1e4a9 15%, #b0e6a8 35%, #9ecd99 50%);
+        overflow-x: hidden;
+    }
+    /* header css*/
+    
+    header {
+        display: flex;
+        height: 15vh;
+        grid-area: header;
+        background-color: #404946;
+        z-index: 100;
+    }
+    
+    header>section:nth-of-type(1) {
+        width: 7.5vw;
+    }
+    
+    header>section:nth-of-type(2) {
+        width: 57.5vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    header>section:nth-of-type(3) {
+        width: 35vw;
+    }
+    
+    header>section>a>img {
+        width: auto;
+        height: 100%;
+    }
+    
+    header>section>a>img:hover {
+        scale: 0.9;
+    }
+    
+    header>section>nav {
+        height: 90%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        gap: 2.5%;
+    }
+    
+    header>section>nav>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 50%;
+        font-size: calc(.75vw + .25vh);
+        background-color: #c3deb5;
+        padding: 10px 10px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #404946;
+    }
+    
+    header>section>nav>a:hover {
+        background-color: #61797b;
+        color: #c3deb5;
+        scale: 1.1;
+    }
+    /* footer styles */
+    
+    main {
+        column-gap: 1%;
+        row-gap: 1%;
+        margin-top: 1%;
+        grid-area: main;
+        height: 200vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 5vh auto;
+        grid-template-areas: ". mainBanner mainBanner mainBanner mainBanner mainBanner rightBanner""leftBanner mainContent1 mainContent1 mainContent1 secondaryContent1 secondaryContent1 rightBanner""leftBanner mainContent1 mainContent1 mainContent1 tertiaryContent1 tertiaryContent2 rightBanner""leftBanner mainContent1 mainContent1 mainContent1 secondaryContent2 secondaryContent2 rightAd1""leftBanner middleSection middleSection middleSection middleSection middleSection middleSection""leftBanner middleSection middleSection middleSection middleSection middleSection middleSection""leftBanner mainContent2 mainContent2 mainContent2  coulmn1 coulmn2 rightAd2""leftBanner mainContent2 mainContent2 mainContent2 coulmn1 coulmn2 rightAd3";
+    }
+    
+    #mainBanner {
+        grid-area: mainBanner;
+        background-color: red;
+        height: 5vh;
+    }
+    
+    #leftBanner {
+        grid-area: leftBanner;
+        background-color: green;
+    }
+    
+    #rightBanner {
+        grid-area: rightBanner;
+        background-color: yellow;
+    }
+    
+    #mainContent1 {
+        grid-area: mainContent1;
+        background-color: orange;
+    }
+    
+    #secondaryContent1 {
+        grid-area: secondaryContent1;
+        background-color: lime;
+    }
+    
+    #tertiaryContent1 {
+        grid-area: tertiaryContent1;
+        background-color: red;
+    }
+    
+    #rightAd1 {
+        grid-area: rightAd1;
+        background-color: blue;
+    }
+    
+    #rightAd2 {
+        grid-area: rightAd2;
+        background-color: blue;
+    }
+    
+    #rightAd3 {
+        grid-area: rightAd3;
+        background-color: blue;
+    }
+    
+    #mainContent2 {
+        grid-area: mainContent2;
+        background-color: purple;
+    }
+    
+    #secondaryContent2 {
+        grid-area: secondaryContent2;
+        background-color: rgb(0, 255, 242);
+    }
+    
+    #tertiaryContent2 {
+        grid-area: tertiaryContent2;
+        background-color: red;
+    }
+    
+    #coulmn1 {
+        grid-area: coulmn1;
+        background-color: gold;
+    }
+    
+    #coulmn2 {
+        grid-area: coulmn2;
+        background-color: rgb(255, 0, 242);
+    }
+    
+    #middleSection {
+        grid-area: middleSection;
+        background-color: maroon;
+    }
+    /* footer styles */
+    
+    footer {
+        grid-area: footer;
+        height: 10vh;
+        width: 100vw;
+        background-color: #404946ee;
+        position: fixed;
+        z-index: 100;
+        top: 90%;
+    }
+    
+    .atBottom {
+        position: inherit;
+        z-index: inherit;
+        top: inherit;
+    }
+    
+    .scrolling {
+        position: fixed;
+    }
