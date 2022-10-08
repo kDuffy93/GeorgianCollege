@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <title>Comp2081-Assignment 1-Kyle Duffy</title>
     <link rel="stylesheet" href="./stylesheets/normalize.css">
+    <!-- css section-->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./stylesheets/index.css">
     <script src="./scripts/scripts.js" defer></script>
 </head>
@@ -21,7 +23,7 @@
             <h1> Main Header</h1>
         </section>
         <section>
-            <nav>
+            <nav id="nav">
                 <a href="#">sample Text</a>
                 <a href="#">sample Text</a>
                 <a href="#">sample Text</a>
@@ -31,25 +33,38 @@
         </section>
     </header>
     <main>
-        <section id="mainBanner"></section>
-        <section id="leftBanner"></section>
-        <section id="rightBanner"></section>
-        <section id="mainContent1"></section>
-        <section id="secondaryContent1"></section>
-        <section id="tertiaryContent1"></section>
-        <section id="middleSection"></section>
-        <section id="rightAd1"></section>
-        <section id="rightAd2"></section>
-        <section id="rightAd3"></section>
-        <section id="mainContent2"></section>
-        <section id="secondaryContent2"></section>
-        <section id="tertiaryContent2"></section>
-        <section id="coulmn1"></section>
-        <section id="coulmn2"></section>
+        <section class="contentSection" id="mainBanner">Some sort of banner</section>
+        <section class="contentSection" id="leftBanner"></section>
+        <section class="contentSection" id="rightBanner"></section>
+        <section class="contentSection" id="mainContent1">
+            <h1>Title1</h1>
+            <article>
+                <h2>sub-Title</h2>
+                <img>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet bibendum magna, ut tristique risus vestibulum in. Morbi eget magna dui. Cras metus mi, venenatis vitae ultricies sed, fringilla ac tortor. Donec venenatis condimentum
+                    odio, ac tristique velit egestas quis. Phasellus risus nulla, feugiat in accumsan a, viverra malesuada purus. Nulla semper id arcu eget tristique. Suspendisse eu diam magna. Ut quis diam ac turpis posuere interdum sed sed felis. Nulla
+                    molestie mollis elit, at scelerisque elit porta eget. Phasellus dictum laoreet turpis, vitae imperdiet erat commodo eu. Nullam metus enim, dignissim non eros non, cursus ultrices urna. Nulla feugiat metus elit, dapibus ultricies odio
+                    ullamcorper a. Pellentesque eu diam mollis, tincidunt felis vel, auctor nibh. </p>
+            </article>
+        </section>
+        <section class="contentSection" id="secondaryContent1"></section>
+        <section class="contentSection" id="tertiaryContent1"></section>
+        <section class="contentSection" id="middleSection"></section>
+        <section class="contentSection" id="rightAd1"></section>
+        <section class="contentSection" id="rightAd2"></section>
+        <section class="contentSection" id="rightAd3"></section>
+        <section class="contentSection" id="mainContent2"></section>
+        <section class="contentSection" id="secondaryContent2"></section>
+        <section class="contentSection" id="tertiaryContent2"></section>
+        <section class="contentSection" id="coulmn1"></section>
+        <section class="contentSection" id="coulmn2"></section>
     </main>
     <footer id="footer">
 
     </footer>
+    <!-- scripts-->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

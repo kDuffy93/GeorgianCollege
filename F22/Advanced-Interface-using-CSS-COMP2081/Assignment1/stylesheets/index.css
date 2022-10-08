@@ -7,7 +7,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 15% auto 10%;
         grid-template-areas: "header""main""footer";
-        background-image: radial-gradient(#c3deb5 5%, #b1e4a9 15%, #b0e6a8 35%, #9ecd99 50%);
+        background-color: #a1cd9a;
         overflow-x: hidden;
     }
     /* header css*/
@@ -45,22 +45,27 @@
     
     header>section>nav {
         height: 90%;
+        width: 90%;
         display: flex;
         align-items: flex-end;
         justify-content: space-evenly;
         gap: 2.5%;
     }
     
+    .navScrolling {
+        align-items: center;
+    }
+    
     header>section>nav>a {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 30%;
+        height: 20%;
         width: 50%;
         font-size: calc(.75vw + .25vh);
         background-color: #c3deb5;
         padding: 10px 10px;
-        border-radius: 50%;
+        border-radius: 25px;
         text-decoration: none;
         color: #404946;
     }
@@ -86,80 +91,71 @@
         grid-template-areas: ". mainBanner mainBanner mainBanner mainBanner mainBanner rightBanner""leftBanner mainContent1 mainContent1 mainContent1 secondaryContent1 secondaryContent1 rightBanner""leftBanner mainContent1 mainContent1 mainContent1 tertiaryContent1 tertiaryContent2 rightBanner""leftBanner mainContent1 mainContent1 mainContent1 secondaryContent2 secondaryContent2 rightAd1""leftBanner middleSection middleSection middleSection middleSection middleSection middleSection""leftBanner middleSection middleSection middleSection middleSection middleSection middleSection""leftBanner mainContent2 mainContent2 mainContent2  coulmn1 coulmn2 rightAd2""leftBanner mainContent2 mainContent2 mainContent2 coulmn1 coulmn2 rightAd3";
     }
     
+    .contentSection {
+        background-color: #61797b;
+        border-radius: 5%;
+    }
+    
     #mainBanner {
         grid-area: mainBanner;
-        background-color: red;
-        height: 5vh;
+        border-radius: 15px;
     }
     
     #leftBanner {
         grid-area: leftBanner;
-        background-color: green;
+        border-radius: 15px;
     }
     
     #rightBanner {
         grid-area: rightBanner;
-        background-color: yellow;
     }
     
     #mainContent1 {
         grid-area: mainContent1;
-        background-color: orange;
     }
     
     #secondaryContent1 {
         grid-area: secondaryContent1;
-        background-color: lime;
     }
     
     #tertiaryContent1 {
         grid-area: tertiaryContent1;
-        background-color: red;
     }
     
     #rightAd1 {
         grid-area: rightAd1;
-        background-color: blue;
     }
     
     #rightAd2 {
         grid-area: rightAd2;
-        background-color: blue;
     }
     
     #rightAd3 {
         grid-area: rightAd3;
-        background-color: blue;
     }
     
     #mainContent2 {
         grid-area: mainContent2;
-        background-color: purple;
     }
     
     #secondaryContent2 {
         grid-area: secondaryContent2;
-        background-color: rgb(0, 255, 242);
     }
     
     #tertiaryContent2 {
         grid-area: tertiaryContent2;
-        background-color: red;
     }
     
     #coulmn1 {
         grid-area: coulmn1;
-        background-color: gold;
     }
     
     #coulmn2 {
         grid-area: coulmn2;
-        background-color: rgb(255, 0, 242);
     }
     
     #middleSection {
         grid-area: middleSection;
-        background-color: maroon;
     }
     /* footer styles */
     
@@ -171,14 +167,17 @@
         position: fixed;
         z-index: 100;
         top: 90%;
+        transform: scaleY(.45) translateY(60%);
     }
     
     .atBottom {
         position: inherit;
         z-index: inherit;
         top: inherit;
+        transform: unset;
     }
     
     .scrolling {
         position: fixed;
+        transform: scaleY(.6) translateY(-40%);
     }
