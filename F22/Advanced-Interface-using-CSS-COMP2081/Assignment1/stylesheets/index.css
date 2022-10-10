@@ -162,6 +162,26 @@
         
         #mainContent1 {
             grid-area: mainContent1;
+            display: flex;
+            flex-direction: column;
+            gap: 2%;
+            align-items: center;
+        }
+        
+        #mainContent1>article {
+            display: flex;
+            flex-direction: column;
+            gap: 2%;
+            align-items: center;
+        }
+        
+        #mainContent1>article>img {
+            max-width: 60%;
+            height: 60%;
+        }
+        
+        #mainContent1>article>p {
+            width: 80%;
         }
         
         #secondaryContent1 {
