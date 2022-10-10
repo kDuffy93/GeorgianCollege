@@ -9,6 +9,18 @@
             grid-template-areas: "header""main""footer";
             background-color: #a1cd9a;
             overflow-x: hidden;
+            font-family: 'Voces', cursive;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a,
+        li {
+            font-family: 'Alkalami', serif;
         }
         /* header css*/
         
@@ -16,6 +28,7 @@
             display: flex;
             height: 15vh;
             grid-area: header;
+            background-color: #404946;
             background-color: #404946;
             z-index: 100;
         }
@@ -43,8 +56,6 @@
         }
         
         header>section:nth-of-type(4)>a {
-            text-decoration: none;
-            color: #ccc;
             width: 33%;
             height: 33%;
             display: flex;
@@ -76,7 +87,7 @@
         }
         
         #topnav {
-            background-color: red;
+            background-color: #404946;
             display: none;
             flex-direction: column;
             gap: 5%;
@@ -86,6 +97,11 @@
             top: 15%;
             margin-right: 3%;
             padding: 2%;
+        }
+        
+        nav>a {
+            text-decoration: none;
+            color: #ccc;
         }
         
         .navScrolling {
@@ -99,6 +115,7 @@
             top: inherit;
             position: fixed;
             transform: scaleY(.6) translateY(-40%);
+            font-size: 1vw;
         }
         
         header>section>nav>a {
