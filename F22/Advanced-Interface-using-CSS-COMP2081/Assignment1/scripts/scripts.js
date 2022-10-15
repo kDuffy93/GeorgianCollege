@@ -37,7 +37,7 @@ const headerObserver = new IntersectionObserver(
                 topnav.classList.remove("navScrolling");
         });
     }, {
-        threshold: [1],
+        threshold: [.1],
     }
 );
 headerObserver.observe(headerTarget);
