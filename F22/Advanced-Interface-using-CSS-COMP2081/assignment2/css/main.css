@@ -1,20 +1,20 @@
-                                        /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-                                        /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-                                        /*
+                                    /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+                                    /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+                                    /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-                                        /* ==========================================================================
+                                    /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-                                        
-                                        html {
-                                            color: #222;
-                                            font-size: 1em;
-                                            line-height: 1.4;
-                                        }
-                                        /*
+                                    
+                                    html {
+                                        color: #222;
+                                        font-size: 1em;
+                                        line-height: 1.4;
+                                    }
+                                    /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
@@ -23,73 +23,73 @@
  *
  * Customize the background color to match your design.
  */
-                                        
-                                         ::-moz-selection {
-                                            background: #b3d4fc;
-                                            text-shadow: none;
-                                        }
-                                        
-                                         ::selection {
-                                            background: #b3d4fc;
-                                            text-shadow: none;
-                                        }
-                                        /*
+                                    
+                                     ::-moz-selection {
+                                        background: #b3d4fc;
+                                        text-shadow: none;
+                                    }
+                                    
+                                     ::selection {
+                                        background: #b3d4fc;
+                                        text-shadow: none;
+                                    }
+                                    /*
  * A better looking default horizontal rule
  */
-                                        
-                                        hr {
-                                            display: block;
-                                            height: 1px;
-                                            border: 0;
-                                            border-top: 1px solid #ccc;
-                                            margin: 1em 0;
-                                            padding: 0;
-                                        }
-                                        /*
+                                    
+                                    hr {
+                                        display: block;
+                                        height: 1px;
+                                        border: 0;
+                                        border-top: 1px solid #ccc;
+                                        margin: 1em 0;
+                                        padding: 0;
+                                    }
+                                    /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-                                        
-                                        audio,
-                                        canvas,
-                                        iframe,
-                                        img,
-                                        svg,
-                                        video {
-                                            vertical-align: middle;
-                                        }
-                                        /*
+                                    
+                                    audio,
+                                    canvas,
+                                    iframe,
+                                    img,
+                                    svg,
+                                    video {
+                                        vertical-align: middle;
+                                    }
+                                    /*
  * Remove default fieldset styles.
  */
-                                        
-                                        fieldset {
-                                            border: 0;
-                                            margin: 0;
-                                            padding: 0;
-                                        }
-                                        /*
+                                    
+                                    fieldset {
+                                        border: 0;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+                                    /*
  * Allow only vertical resizing of textareas.
  */
-                                        
-                                        textarea {
-                                            resize: vertical;
-                                        }
-                                        /* ==========================================================================
+                                    
+                                    textarea {
+                                        resize: vertical;
+                                    }
+                                    /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-                                        /* ==========================================================================
+                                    /* ==========================================================================
    Helper classes
    ========================================================================== */
-                                        /*
+                                    /*
  * Hide visually and from screen readers
  */
-                                        
-                                        .hidden,
-                                        [hidden] {
-                                            display: none !important;
-                                        }
-                                        /*
+                                    
+                                    .hidden,
+                                    [hidden] {
+                                        display: none !important;
+                                    }
+                                    /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
@@ -97,43 +97,43 @@
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-                                        
-                                        .sr-only {
-                                            border: 0;
-                                            clip: rect(0, 0, 0, 0);
-                                            height: 1px;
-                                            margin: -1px;
-                                            overflow: hidden;
-                                            padding: 0;
-                                            position: absolute;
-                                            white-space: nowrap;
-                                            width: 1px;
-                                            /* 1 */
-                                        }
-                                        /*
+                                    
+                                    .sr-only {
+                                        border: 0;
+                                        clip: rect(0, 0, 0, 0);
+                                        height: 1px;
+                                        margin: -1px;
+                                        overflow: hidden;
+                                        padding: 0;
+                                        position: absolute;
+                                        white-space: nowrap;
+                                        width: 1px;
+                                        /* 1 */
+                                    }
+                                    /*
  * Extends the .sr-only class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-                                        
-                                        .sr-only.focusable:active,
-                                        .sr-only.focusable:focus {
-                                            clip: auto;
-                                            height: auto;
-                                            margin: 0;
-                                            overflow: visible;
-                                            position: static;
-                                            white-space: inherit;
-                                            width: auto;
-                                        }
-                                        /*
+                                    
+                                    .sr-only.focusable:active,
+                                    .sr-only.focusable:focus {
+                                        clip: auto;
+                                        height: auto;
+                                        margin: 0;
+                                        overflow: visible;
+                                        position: static;
+                                        white-space: inherit;
+                                        width: auto;
+                                    }
+                                    /*
  * Hide visually and from screen readers, but maintain layout
  */
-                                        
-                                        .invisible {
-                                            visibility: hidden;
-                                        }
-                                        /*
+                                    
+                                    .invisible {
+                                        visibility: hidden;
+                                    }
+                                    /*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -144,368 +144,433 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-                                        
-                                        .clearfix::before,
-                                        .clearfix::after {
-                                            content: " ";
-                                            display: table;
-                                        }
-                                        
-                                        .clearfix::after {
-                                            clear: both;
-                                        }
-                                        /* ==========================================================================
+                                    
+                                    .clearfix::before,
+                                    .clearfix::after {
+                                        content: " ";
+                                        display: table;
+                                    }
+                                    
+                                    .clearfix::after {
+                                        clear: both;
+                                    }
+                                    /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-                                        
-                                        @media only screen and (min-width: 35em) {
-                                            /* Style adjustments for viewports that meet the condition */
-                                        }
-                                        
-                                        @media print,
-                                        (-webkit-min-device-pixel-ratio: 1.25),
-                                        (min-resolution: 1.25dppx),
-                                        (min-resolution: 120dpi) {
-                                            /* Style adjustments for high resolution devices */
-                                        }
-                                        /* ==========================================================================
+                                    
+                                    @media only screen and (min-width: 35em) {
+                                        /* Style adjustments for viewports that meet the condition */
+                                    }
+                                    
+                                    @media print,
+                                    (-webkit-min-device-pixel-ratio: 1.25),
+                                    (min-resolution: 1.25dppx),
+                                    (min-resolution: 120dpi) {
+                                        /* Style adjustments for high resolution devices */
+                                    }
+                                    /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-                                        
-                                        @media print {
-                                            *,
-                                            *::before,
-                                            *::after {
-                                                background: #fff !important;
-                                                color: #000 !important;
-                                                /* Black prints faster */
-                                                box-shadow: none !important;
-                                                text-shadow: none !important;
-                                            }
-                                            a,
-                                            a:visited {
-                                                text-decoration: underline;
-                                            }
-                                            a[href]::after {
-                                                content: " ("attr(href) ")";
-                                            }
-                                            abbr[title]::after {
-                                                content: " ("attr(title) ")";
-                                            }
-                                            /*
+                                    
+                                    @media print {
+                                        *,
+                                        *::before,
+                                        *::after {
+                                            background: #fff !important;
+                                            color: #000 !important;
+                                            /* Black prints faster */
+                                            box-shadow: none !important;
+                                            text-shadow: none !important;
+                                        }
+                                        a,
+                                        a:visited {
+                                            text-decoration: underline;
+                                        }
+                                        a[href]::after {
+                                            content: " ("attr(href) ")";
+                                        }
+                                        abbr[title]::after {
+                                            content: " ("attr(title) ")";
+                                        }
+                                        /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-                                            a[href^="#"]::after,
-                                            a[href^="javascript:"]::after {
-                                                content: "";
-                                            }
-                                            pre {
-                                                white-space: pre-wrap !important;
-                                            }
-                                            pre,
-                                            blockquote {
-                                                border: 1px solid #999;
-                                                page-break-inside: avoid;
-                                            }
-                                            /*
+                                        a[href^="#"]::after,
+                                        a[href^="javascript:"]::after {
+                                            content: "";
+                                        }
+                                        pre {
+                                            white-space: pre-wrap !important;
+                                        }
+                                        pre,
+                                        blockquote {
+                                            border: 1px solid #999;
+                                            page-break-inside: avoid;
+                                        }
+                                        /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-                                            thead {
-                                                display: table-header-group;
-                                            }
-                                            tr,
-                                            img {
-                                                page-break-inside: avoid;
-                                            }
-                                            p,
-                                            h2,
-                                            h3 {
-                                                orphans: 3;
-                                                widows: 3;
-                                            }
-                                            h2,
-                                            h3 {
-                                                page-break-after: avoid;
-                                            }
+                                        thead {
+                                            display: table-header-group;
                                         }
-                                        
-                                        body {
-                                            min-width: 100vw;
-                                            min-height: 100vh;
-                                            padding: 0;
-                                            margin: 0;
+                                        tr,
+                                        img {
+                                            page-break-inside: avoid;
                                         }
-                                        
-                                        body>span:first-of-type {
-                                            min-width: 100vw;
-                                            min-height: 100vh;
-                                            background-color: #140D0F;
-                                            background-image: url('../img/bg.webp');
-                                            background-size: cover;
-                                            background-position: center;
-                                            background-repeat: no-repeat;
-                                            z-index: -1;
-                                            position: fixed;
-                                            top: 0;
-                                            left: 0;
+                                        p,
+                                        h2,
+                                        h3 {
+                                            orphans: 3;
+                                            widows: 3;
                                         }
-                                        
-                                        header {
-                                            height: 7.5vh;
-                                            min-height: 60px;
+                                        h2,
+                                        h3 {
+                                            page-break-after: avoid;
                                         }
-                                        
-                                        .buyNowButton:hover {
-                                            scale: 1.05;
+                                    }
+                                    
+                                    body {
+                                        min-width: 100vw;
+                                        min-height: 100vh;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
+                                    
+                                    body>span:first-of-type {
+                                        min-width: 100vw;
+                                        min-height: 100vh;
+                                        background-color: #140D0F;
+                                        background-image: url('../img/bg.webp');
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        z-index: -1;
+                                        position: fixed;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                    
+                                    header {
+                                        height: 7.5vh;
+                                        min-height: 60px;
+                                    }
+                                    
+                                    .buyNowButton:hover {
+                                        scale: 1.05;
+                                    }
+                                    
+                                    header>nav>a>img {
+                                        width: 85px;
+                                        height: 50px;
+                                        transition: 0.1s;
+                                    }
+                                    
+                                    header>nav>a>img:hover {
+                                        scale: 1.05;
+                                    }
+                                    
+                                    .show {
+                                        text-align: center;
+                                        z-index: 20;
+                                    }
+                                    
+                                    .collapsing {
+                                        transition: none !important;
+                                    }
+                                    
+                                    .nav-link {
+                                        transition: 0.1s;
+                                    }
+                                    
+                                    .nav-link:hover {
+                                        text-decoration: underline;
+                                        scale: 1.05;
+                                    }
+                                    
+                                    main>section>section {
+                                        border: red 2px solid;
+                                        margin-bottom: 5vh;
+                                    }
+                                    
+                                    main>section>section:nth-of-type(2) {}
+                                    
+                                    ul>li>a {
+                                        font-weight: bold !important;
+                                    }
+                                    
+                                    .carousel-item {
+                                        height: inherit;
+                                        width: inherit;
+                                    }
+                                    
+                                    #carouselExampleIndicators {
+                                        grid-area: carousel;
+                                        width: 35vw;
+                                        height: 67vw;
+                                        max-height: 70vh;
+                                        min-width: 160px;
+                                        min-height: 225px;
+                                        margin: 2vw 0 0 2vw;
+                                    }
+                                    
+                                    .carousel-item>img {
+                                        height: 60vw;
+                                        width: 30vw;
+                                        max-height: 70vh;
+                                        min-width: 140px;
+                                        min-height: 200px;
+                                    }
+                                    
+                                    h5 {
+                                        color: red;
+                                        margin-top: -64.5vh;
+                                    }
+                                    
+                                    .mainContent {
+                                        display: grid;
+                                        grid-template-columns: repeat(1fr, 3);
+                                        grid-template-areas: "introContent introContent introContent""BookInformation BookInformation BookInformation""excerpt excerpt excerpt""reviews reviews reviews";
+                                    }
+                                    
+                                    #about {
+                                        grid-area: introContent;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        flex-basis: 50%;
+                                        justify-content: space-evenly;
+                                        align-items: center;
+                                        width: 100vw;
+                                    }
+                                    
+                                    #about>article {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 30%;
+                                        min-width: 230px;
+                                        align-items: center;
+                                        justify-self: center;
+                                        align-self: flex-start;
+                                        gap: 5vh;
+                                    }
+                                    
+                                    #about>article>div {}
+                                    
+                                    #about>article>figure {
+                                        background-color: RGBA(200, 200, 200, 0.5);
+                                        height: fit-content;
+                                        padding: 1vmin;
+                                        border-radius: 50px;
+                                    }
+                                    
+                                    #about>article>div :is(h2,
+                                    h4) {
+                                        text-decoration: underline;
+                                        font-weight: bold;
+                                        text-align: center;
+                                        color: hsl(0, 8%, 12%);
+                                        /* color: rgba(237, 192, 84, 1); */
+                                    }
+                                    
+                                    #about>article>div {
+                                        height: fit-content;
+                                        padding: 0 25px;
+                                        border-radius: 50px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin-top: 2.5vh;
+                                        background-color: RGBA(200, 200, 200, 0.5);
+                                        width: fit-content;
+                                    }
+                                    
+                                    #about>figure {
+                                        background-color: RGBA(255, 255, 255, 0.5);
+                                        height: fit-content;
+                                        padding: 1vmin;
+                                        border-radius: 50px;
+                                        display: none;
+                                    }
+                                    
+                                    figcaption {
+                                        text-decoration: underline;
+                                        text-align: center;
+                                    }
+                                    
+                                    .break {
+                                        display: none;
+                                    }
+                                    
+                                    main>nav {
+                                        justify-content: center !important;
+                                    }
+                                    
+                                    #bookInfo {
+                                        min-height: 50vh;
+                                        grid-area: BookInformation;
+                                        padding-bottom: 3%;
+                                        justify-content: center;
+                                    }
+                                    
+                                    #bookInfo>nav {
+                                        padding-bottom: 3%;
+                                    }
+                                    
+                                    #nav-tab {
+                                        border: 0;
+                                    }
+                                    
+                                    .tab-content {
+                                        align-self: flex-start;
+                                        background-color: RGBA(255, 255, 255, 0.75);
+                                        height: fit-content;
+                                        padding: 1.5% 3%;
+                                        border-radius: 10% / 30%;
+                                    }
+                                    
+                                    main>nav>ul>li {
+                                        background-color: RGBA(200, 200, 200, 0.4)
+                                    }
+                                    
+                                    #bookInfo {
+                                        display: flex;
+                                        flex-basis: 50%;
+                                        justify-content: center;
+                                    }
+                                    
+                                    #bookInfo>section:first-of-type {
+                                        max-width: 70%;
+                                    }
+                                    
+                                    #bookInfo>section:nth-of-type(2) {
+                                        width: 30%
+                                    }
+                                    
+                                    #bookInfo .nav-link {
+                                        border-radius: 10% / 50%;
+                                        background-color: RGBA(200, 200, 200, 0.4);
+                                        color: hsl(0, 8%, 12%);
+                                    }
+                                    
+                                    #bookInfo .nav-link.active {
+                                        background-color: RGBA(200, 200, 200, 0.4);
+                                        background-color: #ffffffa8 !important;
+                                    }
+                                    
+                                    .accordion-body>div>section {
+                                        display: flex;
+                                        gap: 5%;
+                                    }
+                                    
+                                    .accordion-body>div>section>section:first-of-type {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-start;
+                                        min-width: 125px;
+                                        border-bottom: #333 solid 1px;
+                                        margin-bottom: 5%;
+                                    }
+                                    
+                                    .mainContent>section:nth-of-type(3) {
+                                        width: 100vw;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    
+                                    #bottomSection {
+                                        width: 85vw;
+                                    }
+                                    
+                                    #reviews>div {
+                                        padding: var(--bs-accordion-body-padding-y) 0;
+                                    }
+                                    
+                                    @media (max-width: 768px) {
+                                        header>nav>.show {
+                                            background-color: RGBA(255, 255, 255, 0.75);
+                                            min-width: fit-content;
+                                            max-width: 30%;
+                                            flex-basis: 100vw;
+                                            margin-left: unset !important;
                                         }
-                                        
-                                        header>nav>a>img {
-                                            width: 85px;
-                                            height: 50px;
-                                            transition: 0.1s;
+                                        .break {
+                                            display: unset;
+                                            flex-basis: 100%;
+                                            height: 0;
                                         }
-                                        
-                                        header>nav>a>img:hover {
-                                            scale: 1.05;
+                                        main>nav>ul {
+                                            display: none !important;
                                         }
-                                        
-                                        .show {
-                                            text-align: center;
-                                            z-index: 20;
+                                        main>nav {
+                                            justify-content: flex-end !important;
+                                            margin-right: 2.5vw;
                                         }
-                                        
-                                        .collapsing {
-                                            transition: none !important;
-                                        }
-                                        
-                                        .nav-link {
-                                            transition: 0.1s;
-                                        }
-                                        
-                                        .nav-link:hover {
-                                            text-decoration: underline;
-                                            scale: 1.05;
-                                        }
-                                        
-                                        main>section>section {
-                                            border: red 2px solid;
-                                            margin-bottom: 5vh;
-                                        }
-                                        
-                                        main>section>section:nth-of-type(2) {}
-                                        
-                                        ul>li>a {
-                                            font-weight: bold !important;
-                                        }
-                                        
-                                        .carousel-item {
-                                            height: inherit;
-                                            width: inherit;
-                                        }
-                                        
-                                        #carouselExampleIndicators {
-                                            grid-area: carousel;
-                                            width: 35vw;
-                                            height: 67vw;
-                                            max-height: 70vh;
-                                            min-width: 160px;
-                                            min-height: 225px;
-                                            margin: 2vw 0 0 2vw;
-                                        }
-                                        
                                         .carousel-item>img {
                                             height: 60vw;
-                                            width: 30vw;
+                                            width: 42vw;
                                             max-height: 70vh;
-                                            min-width: 140px;
-                                            min-height: 200px;
                                         }
-                                        
-                                        h5 {
-                                            color: red;
-                                            margin-top: -64.5vh;
-                                        }
-                                        
-                                        #mainContent {
-                                            display: flex;
-                                            grid-template-columns: repeat(1fr, 3);
-                                            grid-template-areas: "introContent introContent introContent""BookInformation BookInformation AuthorInformation""excerpt excerpt excerpt""reviews reviews reviews";
-                                        }
-                                        
-                                        #about {
-                                            grid-area: introContent;
-                                            display: flex;
-                                            flex-wrap: wrap;
-                                            flex-basis: 50%;
-                                            justify-content: space-evenly;
-                                            align-items: center;
-                                            width: 100vw;
-                                        }
-                                        
-                                        #about>article {
-                                            display: flex;
-                                            flex-direction: column;
-                                            width: 30%;
-                                            min-width: 230px;
-                                            align-items: center;
-                                            justify-self: center;
-                                            align-self: flex-start;
-                                            gap: 5vh;
-                                        }
-                                        
-                                        #about>article>div {}
-                                        
                                         #about>article>figure {
-                                            background-color: RGBA(200, 200, 200, 0.5);
-                                            height: fit-content;
-                                            padding: 1vmin;
-                                            border-radius: 50px;
+                                            display: none;
                                         }
-                                        
-                                        #about>article>div :is(h2,
-                                        h4) {
-                                            text-decoration: underline;
-                                            font-weight: bold;
-                                            text-align: center;
-                                            color: hsl(0, 8%, 12%);
-                                            /* color: rgba(237, 192, 84, 1); */
-                                        }
-                                        
-                                        #about>article>div {
-                                            height: fit-content;
-                                            padding: 0 25px;
-                                            border-radius: 50px;
-                                            display: flex;
-                                            flex-direction: column;
-                                            margin-top: 2.5vh;
-                                            background-color: RGBA(200, 200, 200, 0.5);
-                                            width: fit-content;
-                                        }
-                                        
                                         #about>figure {
-                                            background-color: RGBA(255, 255, 255, 0.5);
-                                            height: fit-content;
-                                            padding: 1vmin;
-                                            border-radius: 50px;
-                                            display: none;
+                                            display: block;
                                         }
-                                        
-                                        figcaption {
-                                            text-decoration: underline;
-                                            text-align: center;
+                                        #about>article {
+                                            align-self: center;
                                         }
-                                        
-                                        .break {
-                                            display: none;
+                                        header>nav {
+                                            justify-content: space-evenly !important;
                                         }
-                                        
+                                        header>nav>div>ul {
+                                            align-items: center !important;
+                                        }
+                                        #bookInfo>section:first-of-type {
+                                            max-width: 100%;
+                                        }
+                                        #bookInfo>section:nth-of-type(2) {
+                                            width: 50%
+                                        }
+                                        .accordion-body>div>section>section:first-of-type {
+                                            flex-direction: column !important;
+                                            justify-content: space-evenly;
+                                        }
+                                        #bottomSection {
+                                            width: 100vw !important;
+                                            grid-area: reviews;
+                                        }
+                                    }
+                                    
+                                    @media (max-width: 410px) {
+                                        #about>article {
+                                            order: -1;
+                                            width: 100%;
+                                        }
+                                        #about {
+                                            flex-basis: 100%;
+                                        }
                                         main>nav {
-                                            justify-content: center !important;
+                                            max-height: 5vh;
                                         }
-                                        
-                                        #bookInfo {
-                                            grid-area: BookInformation;
-                                            padding-bottom: 3%;
-                                            justify-content: center;
+                                        main>nav>button {
+                                            writing-mode: vertical-lr;
+                                            text-orientation: upright;
                                         }
-                                        
-                                        #bookInfo>nav {
-                                            padding-bottom: 3%;
+                                        .sticky-top {
+                                            transform: translateY(7vh);
                                         }
-                                        
-                                        #nav-tab {
-                                            border: 0;
+                                    }
+                                    
+                                    @media (max-width: 991px) {
+                                        .accordion-body>div>section {
+                                            flex-direction: column;
                                         }
-                                        
-                                        .tab-content {
-                                            align-self: flex-start;
-                                            width: 70vw;
-                                            background-color: RGBA(255, 255, 255, 0.75);
-                                            height: fit-content;
-                                            padding: 1.5% 3%;
-                                            border-radius: 10% / 50%;
+                                        .accordion-body>div>section>section:first-of-type {
+                                            flex-direction: row;
+                                            justify-content: space-evenly;
                                         }
-                                        
-                                        main>nav>ul>li {
-                                            background-color: RGBA(200, 200, 200, 0.4)
-                                        }
-                                        
-                                        #bookInfo .nav-link {
-                                            border-radius: 10% / 50%;
-                                            background-color: RGBA(200, 200, 200, 0.4);
-                                            color: hsl(0, 8%, 12%);
-                                        }
-                                        
-                                        #bookInfo .nav-link.active {
-                                            background-color: RGBA(200, 200, 200, 0.4);
-                                            background-color: #ffffffa8 !important;
-                                        }
-                                        
-                                        @media (max-width: 768px) {
-                                            header>nav>.show {
-                                                background-color: RGBA(255, 255, 255, 0.75);
-                                                min-width: fit-content;
-                                                max-width: 30%;
-                                                flex-basis: 100vw;
-                                                margin-left: unset !important;
-                                            }
-                                            .break {
-                                                display: unset;
-                                                flex-basis: 100%;
-                                                height: 0;
-                                            }
-                                            main>nav>ul {
-                                                display: none !important;
-                                            }
-                                            main>nav {
-                                                justify-content: flex-end !important;
-                                                margin-right: 2.5vw;
-                                            }
-                                            .carousel-item>img {
-                                                height: 60vw;
-                                                width: 42vw;
-                                                max-height: 70vh;
-                                            }
-                                            #about>article>figure {
-                                                display: none;
-                                            }
-                                            #about>figure {
-                                                display: block;
-                                            }
-                                            #about>article {
-                                                align-self: center;
-                                            }
-                                            header>nav {
-                                                justify-content: space-evenly !important;
-                                            }
-                                            header>nav>div>ul {
-                                                align-items: center !important;
-                                            }
-                                            header>nav>div {}
-                                        }
-                                        
-                                        @media (max-width: 410px) {
-                                            #about>article {
-                                                order: -1;
-                                                width: 100%;
-                                            }
-                                            #about {
-                                                flex-basis: 100%;
-                                            }
-                                            main>nav {
-                                                max-height: 5vh;
-                                            }
-                                            main>nav>button {
-                                                writing-mode: vertical-lr;
-                                                text-orientation: upright;
-                                            }
-                                            .sticky-top {
-                                                transform: translateY(7vh);
-                                            }
-                                        }
+                                    }
