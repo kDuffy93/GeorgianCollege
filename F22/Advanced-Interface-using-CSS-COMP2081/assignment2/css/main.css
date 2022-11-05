@@ -352,10 +352,14 @@
                                                 display: flex;
                                                 flex-direction: column;
                                                 width: 30%;
-                                                min-width: 192px;
-                                                justify-content: space-evenly;
+                                                min-width: 230px;
+                                                align-items: center;
                                                 justify-self: center;
+                                                align-self: flex-start;
+                                                gap: 5vh;
                                             }
+                                            
+                                            #about>article>div {}
                                             
                                             #about>article>figure {
                                                 background-color: RGBA(200, 200, 200, 0.5);
@@ -369,16 +373,19 @@
                                                 text-decoration: underline;
                                                 font-weight: bold;
                                                 text-align: center;
-                                                color: rgba(237, 192, 84, 1);
+                                                color: hsl(0, 8%, 12%);
+                                                /* color: rgba(237, 192, 84, 1); */
                                             }
                                             
                                             #about>article>div {
                                                 height: fit-content;
-                                                padding: 1vmin;
+                                                padding: 0 25px;
                                                 border-radius: 50px;
-                                                width: calc(fit-content+200px);
                                                 display: flex;
                                                 flex-direction: column;
+                                                margin-top: 2.5vh;
+                                                background-color: RGBA(200, 200, 200, 0.5);
+                                                width: fit-content;
                                             }
                                             
                                             #about>figure {
@@ -415,10 +422,14 @@
                                             .tab-content {
                                                 align-self: flex-start;
                                                 width: 70vw;
-                                                background-color: RGBA(255, 255, 255, 0.5);
+                                                background-color: RGBA(255, 255, 255, 0.75);
                                                 height: fit-content;
                                                 padding: 1.5% 3%;
                                                 border-radius: 10% / 50%;
+                                            }
+                                            
+                                            main>nav>ul>li {
+                                                background-color: RGBA(200, 200, 200, 0.4)
                                             }
                                             
                                             @media (max-width: 768px) {
@@ -451,6 +462,9 @@
                                                 }
                                                 #about>figure {
                                                     display: block;
+                                                }
+                                                #about>article {
+                                                    align-self: center;
                                                 }
                                                 header>nav {
                                                     justify-content: space-evenly !important;
