@@ -261,11 +261,6 @@
                                                 min-height: 60px;
                                             }
                                             
-                                            main {
-                                                background-color: RGBA(0, 0, 0, 0.25);
-                                                min-height: 9000vh;
-                                            }
-                                            
                                             .buyNowButton:hover {
                                                 scale: 1.05;
                                             }
@@ -282,8 +277,7 @@
                                             
                                             .show {
                                                 text-align: center;
-                                                background-color: RGBA(255, 255, 255, 0.75);
-                                                z-index: 10;
+                                                z-index: 20;
                                             }
                                             
                                             .collapsing {
@@ -299,11 +293,12 @@
                                                 scale: 1.05;
                                             }
                                             
-                                            main>section {
-                                                background-color: rgba(0, 0, 0, 0.3);
+                                            main>section>section {
                                                 border: red 2px solid;
                                                 margin-bottom: 5vh;
                                             }
+                                            
+                                            main>section>section:nth-of-type(2) {}
                                             
                                             ul>li>a {
                                                 font-weight: bold !important;
@@ -315,11 +310,12 @@
                                             }
                                             
                                             #carouselExampleIndicators {
+                                                grid-area: carousel;
                                                 width: 35vw;
                                                 height: 67vw;
                                                 max-height: 70vh;
-                                                min-width: 250px;
-                                                min-height: 320px;
+                                                min-width: 160px;
+                                                min-height: 225px;
                                                 margin: 2vw 0 0 2vw;
                                             }
                                             
@@ -327,20 +323,117 @@
                                                 height: 60vw;
                                                 width: 30vw;
                                                 max-height: 70vh;
-                                                min-width: 150px;
-                                                min-height: 215px;
+                                                min-width: 140px;
+                                                min-height: 200px;
                                             }
                                             
                                             h5 {
                                                 color: red;
-                                                margin-top: -15vh;
+                                                margin-top: -64.5vh;
+                                            }
+                                            
+                                            #mainContent {
+                                                display: flex;
+                                                grid-template-columns: repeat(1fr, 3);
+                                                grid-template-areas: "introContent introContent introContent""BookInformation BookInformation AuthorInformation""excerpt excerpt excerpt""reviews reviews reviews";
+                                            }
+                                            
+                                            #about {
+                                                grid-area: introContent;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                flex-basis: 50%;
+                                                justify-content: space-evenly;
+                                                align-items: center;
+                                                width: 100vw;
+                                            }
+                                            
+                                            #about>article {
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 30%;
+                                                min-width: 192px;
+                                                justify-content: space-evenly;
+                                                justify-self: center;
+                                            }
+                                            
+                                            #about>article>figure {
+                                                background-color: RGBA(200, 200, 200, 0.5);
+                                                height: fit-content;
+                                                padding: 1vmin;
+                                                border-radius: 50px;
+                                            }
+                                            
+                                            #about>article>div :is(h2,
+                                            h4) {
+                                                text-decoration: underline;
+                                                font-weight: bold;
+                                                text-align: center;
+                                                color: rgba(237, 192, 84, 1);
+                                            }
+                                            
+                                            #about>article>div {
+                                                height: fit-content;
+                                                padding: 1vmin;
+                                                border-radius: 50px;
+                                                width: calc(fit-content+200px);
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            #about>figure {
+                                                background-color: RGBA(255, 255, 255, 0.5);
+                                                height: fit-content;
+                                                padding: 1vmin;
+                                                border-radius: 50px;
+                                                display: none;
+                                            }
+                                            
+                                            figcaption {
+                                                text-decoration: underline;
+                                                text-align: center;
+                                            }
+                                            
+                                            .break {
+                                                display: none;
                                             }
                                             
                                             main>nav {
-                                                justify-content: center!important;
+                                                justify-content: center !important;
+                                            }
+                                            
+                                            #bookInfo {
+                                                grid-area: BookInformation;
+                                                padding-bottom: 3%;
+                                                justify-content: center;
+                                            }
+                                            
+                                            #bookInfo>nav {
+                                                padding-bottom: 3%;
+                                            }
+                                            
+                                            .tab-content {
+                                                align-self: flex-start;
+                                                width: 70vw;
+                                                background-color: RGBA(255, 255, 255, 0.5);
+                                                height: fit-content;
+                                                padding: 1.5% 3%;
+                                                border-radius: 10% / 50%;
                                             }
                                             
                                             @media (max-width: 768px) {
+                                                header>nav>.show {
+                                                    background-color: RGBA(255, 255, 255, 0.75);
+                                                    min-width: fit-content;
+                                                    max-width: 30%;
+                                                    flex-basis: 100vw;
+                                                    margin-left: unset !important;
+                                                }
+                                                .break {
+                                                    display: unset;
+                                                    flex-basis: 100%;
+                                                    height: 0;
+                                                }
                                                 main>nav>ul {
                                                     display: none !important;
                                                 }
@@ -353,34 +446,37 @@
                                                     width: 42vw;
                                                     max-height: 70vh;
                                                 }
+                                                #about>article>figure {
+                                                    display: none;
+                                                }
+                                                #about>figure {
+                                                    display: block;
+                                                }
+                                                header>nav {
+                                                    justify-content: space-evenly !important;
+                                                }
+                                                header>nav>div>ul {
+                                                    align-items: center !important;
+                                                }
+                                                header>nav>div {}
                                             }
                                             
-                                            #about {
-                                                display: flex;
-                                                justify-content: space-evenly;
-                                                align-items: center;
-                                            }
-                                            
-                                            #about>article {
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
-                                                background-color: RGBA(255, 255, 255, 0.5);
-                                                width: 30%;
-                                                min-width: 185px;
-                                            }
-                                            
-                                            #about>article :is(h1,
-                                            h2,
-                                            h3,
-                                            h4,
-                                            h6) {
-                                                text-decoration: underline;
-                                                padding-left: 2vw !important;
-                                                font-weight: bold;
-                                            }
-                                            
-                                            figcaption {
-                                                text-decoration: underline;
-                                                text-align: center;
+                                            @media (max-width: 410px) {
+                                                #about>article {
+                                                    order: -1;
+                                                    width: 100%;
+                                                }
+                                                #about {
+                                                    flex-basis: 100%;
+                                                }
+                                                main>nav {
+                                                    max-height: 5vh;
+                                                }
+                                                main>nav>button {
+                                                    writing-mode: vertical-lr;
+                                                    text-orientation: upright;
+                                                }
+                                                .sticky-top {
+                                                    transform: translateY(7vh);
+                                                }
                                             }

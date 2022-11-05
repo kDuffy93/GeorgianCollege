@@ -44,22 +44,22 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#globalNav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-            <div class="collapse navbar-collapse" id="globalNav">
-                <ul class="navbar-nav ms-auto   me-4 ">
-                    <li class="nav-item active me-2">
+            <div class="break"></div>
+            <div class="collapse navbar-collapse ms-auto" id="globalNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item active me-2 ms-2">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item me-2">
+                    <li class="nav-item me-2 ms-2">
                         <a class="nav-link" href="#">Books</a>
                     </li>
-                    <li class="nav-item  me-2">
+                    <li class="nav-item  me-2 ms-2">
                         <a class="nav-link" href="#">Programs</a>
                     </li>
-                    <li class="nav-item  me-2">
+                    <li class="nav-item  me-2 ms-2">
                         <a class="nav-link" href="#">Online Resources</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item  me-2 ms-2">
                         <a class="nav-link" href="#">Community Info</a>
                     </li>
                 </ul>
@@ -86,82 +86,131 @@
                 <li class="nav-item me-md-3 ">
                     <a class="nav-link" href="#">Reviews</a>
                 </li>
-
             </ul>
             <button class="me-md-2 btn btn-primary btn-lg btn-outline-primary text-primary my-2 my-sm-0  fw-bold bg-light bg-opacity-50 buyNowButton" type="submit">Buy Now</button>
-
-
         </nav>
+        <section class="mainContent">
+            <section id="about">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
 
-        <section id="about">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
 
-                </div>
-                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/bookCover.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>Cover</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/bookBack.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>Reverse Cover</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/collectersCover.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>Collectors Edition Cover</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/collectersBack.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-lg-block">
+                                <h5>Collectors Edition Reverse Cover</h5>
+                            </div>
+                        </div>
 
-                    <div class="carousel-item active">
-                        <img src="./img/bookCover.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-lg-block">
-                            <h5>Cover</h5>
-                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/bookBack.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-lg-block">
-                            <h5>Reverse Cover</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/collectersCover.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-lg-block">
-                            <h5>Collectors Edition Cover</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/collectersBack.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-lg-block">
-                            <h5>Collectors Edition Reverse Cover</h5>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-            </div>
-
-            <article>
-                <h2>Fairy Tale</h2>
-                <h4>By: <a href="https://stephenking.com">Stephen King</a></h4>
-                <h4>List Price: $32.50</h4>
+                </div>
+                <article>
+                    <div>
+                        <h2>Fairy Tale</h2>
+                        <h4>By: <a href="https://stephenking.com">Stephen King</a></h4>
+                        <h4>List Price: $32.50</h4>
+                    </div>
+                    <figure class="container">
+                        <figcaption>Synopsis</figcaption>
+                        <p>Legendary storyteller Stephen King goes into the deepest well of his imagination in this spellbinding novel about a seventeen-year-old boy who inherits the keys to a parallel world where good and evil are at war, and the stakes
+                            could not be higher—for their world or ours.</p>
+                        <p>King’s storytelling in Fairy Tale soars. This is a magnificent and terrifying tale about another world than ours, in which good is pitted against overwhelming evil, and a heroic boy – and his dog – must lead the battle.</p>
+                    </figure>
+                </article>
                 <figure class="container">
                     <figcaption>Synopsis</figcaption>
                     <p>Legendary storyteller Stephen King goes into the deepest well of his imagination in this spellbinding novel about a seventeen-year-old boy who inherits the keys to a parallel world where good and evil are at war, and the stakes could
                         not be higher—for their world or ours.</p>
+                    <p>King’s storytelling in Fairy Tale soars. This is a magnificent and terrifying tale about another world than ours, in which good is pitted against overwhelming evil, and a heroic boy – and his dog – must lead the battle.</p>
                 </figure>
-            </article>
+            </section>
+            <section id="bookInfo" class="row">
+                <nav>
+                    <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
 
-        </section>
-        <section id="author" class="row">
+                        <button class="nav-link active" id="aboutBookButton" data-bs-toggle="pill" data-bs-target="#aboutBook" type="button" role="tab" aria-controls="aboutBook" aria-selected="true">About the book</button>
 
-        </section>
-        <section id="excerpt" class="row">
+                        <button class="nav-link" id="mediaReactionsButton" data-bs-toggle="pill" data-bs-target="#mediaReactions" type="button" role="tab" aria-controls="mediaReactions" aria-selected="false">Media Reactions</button>
 
-        </section>
-        <section id="reviews" class="row">
+                        <button class="nav-link" id="excerptButton" data-bs-toggle="pill" data-bs-target="#excerpt" type="button" role="tab" aria-controls="excerpt" aria-selected="false">Excerpt</button>
 
-        </section>
-        <section id="" class="row">
+                        <button class="nav-link" id="productDetailsButton" data-bs-toggle="pill" data-bs-target="#productDetails" type="button" role="tab" aria-controls="productDetails" aria-selected="false">Product Details</button>
+                    </div>
+                </nav>
+
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <div class="tab-pane fade show active" id="aboutBook" role="tabpanel" aria-labelledby="aboutBookButton">
+                        <p>Charlie Reade looks like a regular high school kid, great at baseball and football, a decent student. But he carries a heavy load. His mom was killed in a hit-and-run accident when he was seven, and grief drove his dad to drink.
+                            Charlie learned how to take care of himself—and his dad. When Charlie is seventeen, he meets a dog named Radar and her aging master, Howard Bowditch, a recluse in a big house at the top of a big hill, with a locked shed in
+                            the backyard. Sometimes strange sounds emerge from it.</p>
+                        <p>Charlie starts doing jobs for Mr. Bowditch and loses his heart to Radar. Then, when Bowditch dies, he leaves Charlie a cassette tape telling a story no one would believe. What Bowditch knows, and has kept secret all his long life,
+                            is that inside the shed is a portal to another world.</p>
+                    </div>
+                    <div class="tab-pane fade" id="mediaReactions" role="tabpanel" aria-labelledby="mediaReactionsButton">
+
+                    </div>
+                    <div class="tab-pane fade" id="excerpt" role="tabpanel" aria-labelledby="excerptButton">...</div>
+                    <div class="tab-pane fade" id="productDetails" role="tabpanel" aria-labelledby="productDetailsButton">...</div>
+                </div>
+            </section>
+
+            <div class="accordion" id="bottomSection">
+
+                <section id="authorInfo" class="accordion-item">
+                    <h2 class="accordion-header" id="authorInformationButton">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#authorInformation" aria-expanded="true" aria-controls="authorInformation">Author Information</button>
+                    </h2>
+                    <div id="authorInformation" class="accordion-collapse collapse show" aria-labelledby="authorInformationButton" data-bs-parent="#bottomSection">
+                        <div class="accordion-body">
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="reviewsInfo" class="accordion-item">
+                    <h2 class="accordion-header" id="reviewsButton">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#reviews" aria-expanded="true" aria-controls="reviews">reviews</button>
+                    </h2>
+                    <div id="reviews" class="accordion-collapse collapse" aria-labelledby="reviewsButton" data-bs-parent="#bottomSection">
+                        <div class="accordion-body">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
 
         </section>
     </main>
