@@ -249,7 +249,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     body {
-        min-width: 100vw;
+        min-width: 98vw;
         min-height: 100vh;
         padding: 0;
         margin: 0;
@@ -608,23 +608,30 @@ https://www.phpied.com/delay-loading-your-print-css/
         display: none;
     }
     
-    p~ul {
+    div>h5~ul {
         margin-left: 10%;
         width: 80%;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         gap: .5vw;
+        column-gap: 3vh;
         justify-content: space-evenly;
         background-color: RGBA(200, 200, 200, 0.7);
         border-radius: 20%/20%;
         padding: 1% 0%;
     }
     
-    p~ul>h5 {
+    #authorInformation>section:nth-of-type(2)>div>h5 {
         text-decoration: underline;
         font-weight: bold;
         align-self: flex-start;
+    }
+    
+    #authorInformation>section:nth-of-type(2) {
+        gap: 2.5vh;
+        display: flex;
+        flex-direction: column;
     }
     
     .sticky-top {
