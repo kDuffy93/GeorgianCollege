@@ -547,6 +547,56 @@ let buildMediaReactions = () => {
 
 };
 buildMediaReactions();
+/* 
+<option value="hardCover">Hard Cover</option>
+                    <option value="ebook">E-book</option> */
+
+
+
+let topSelect = document.getElementById("topSelect");
+let bottomSelect = document.getElementById("bottomSelect");
+
+let ebook = document.querySelectorAll(".buyLinks")[0].children[2];
+let ebook1 = document.querySelectorAll(".buyLinks")[1].children[2];
+let hardCover = document.querySelectorAll(".buyLinks")[0].children[1];
+let hardCover1 = document.querySelectorAll(".buyLinks")[1].children[1];
+
+
+
+let selectClick = (evtValue) => {
+    topSelect.value = `${evtValue}`;
+    bottomSelect.value = `${evtValue}`;
+    console.log(bottomSelect);
+    if (evtValue == "ebook") {
+        topSelect.value = "ebook";
+        topSelect.selectedIndex = 1;
+        bottomSelect.selectedIndex = 1;
+        bottomSelect.value = "ebook";
+        hardCover.style.display = "none";
+        hardCover1.style.display = "none";
+        ebook.style.display = "flex";
+        ebook1.style.display = "flex";
+    }
+    if (evtValue == "hardCover") {
+        topSelect.value = "hardCover";
+        bottomSelect.value = "hardCover";
+        topSelect.selectedIndex = 0;
+        bottomSelect.selectedIndex = 0;
+        hardCover.style.display = "flex";
+        hardCover1.style.display = "flex";
+        ebook.style.display = "none";
+        ebook1.style.display = "none";
+    }
+}
+
+topSelect.addEventListener('change', (e) => {
+    selectClick(e.target.value)
+});
+bottomSelect.addEventListener("change", (e) => {
+    selectClick(e.target.value)
+});
+
+selectClick("hardCover");
 
 
 let buildAcordionItem = (input, type) => {

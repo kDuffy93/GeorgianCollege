@@ -649,6 +649,20 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     #tabContentExcerpt {
         margin-right: 7.5%;
+        align-self: center;
+    }
+    
+    #tabButtonsExcerpt {
+        gap: 1vh;
+        position: sticky;
+        top: 35%;
+    }
+    
+    #topSelect,
+    #bottomSelect {
+        align-self: center;
+        margin-bottom: 2.5vh;
+        width: fit-content;
     }
     
     @media (max-width: 768px) {
