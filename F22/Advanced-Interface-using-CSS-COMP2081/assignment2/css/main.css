@@ -574,22 +574,30 @@ https://www.phpied.com/delay-loading-your-print-css/
         grid-template-areas: "picCard picCard short short short""picCard picCard short short short""Description Description Description Description Description""Description Description Description Description Description";
     }
     
+    #authorCarousel>div>div>img {
+        max-width: 100%;
+        max-height: 50vh;
+        border-radius: 12.5% / 37.5%;
+    }
+    
     #authorInformation>section:first-of-type {
         width: 100%;
         grid-area: picCard;
         align-self: center;
     }
     
-    #authorInformation>section:first-of-type>img {
-        max-width: 100%;
+    #authorInformation>section:nth-child(1) {
+        margin-left: 2vw;
     }
     
     #authorInformation>section:nth-child(3) {
         grid-area: Description;
+        margin-top: 5vh;
     }
     
     #authorInformation>section:nth-child(2) {
         grid-area: short;
+        align-self: center;
     }
     
     #authorInformation.show {
@@ -655,7 +663,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     #tabButtonsExcerpt {
         gap: 1vh;
         position: sticky;
-        top: 35%;
+        top: 5%;
     }
     
     #topSelect,
@@ -665,10 +673,15 @@ https://www.phpied.com/delay-loading-your-print-css/
         width: fit-content;
     }
     
+    .carousel-inner {
+        width: 96% !important;
+    }
+    
     @media (max-width: 768px) {
         #tabButtonsExcerpt {
             flex-direction: row !important;
             justify-content: space-evenly;
+            position: inherit;
         }
         #excerpt>div {
             flex-direction: column !important;
@@ -722,6 +735,9 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     @media (max-width: 410px) {
         #about>article:nth-child(2)>div:nth-child(1) {
+            margin-right: 12.5%;
+        }
+        #carouselExampleIndicators {
             margin-right: 12.5%;
         }
         #about>aside>section>a>img {
