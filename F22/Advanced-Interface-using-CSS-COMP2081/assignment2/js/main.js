@@ -758,3 +758,27 @@ for (const about in aboutAuthors) {
         buildAcordionItem(element, "aboutAuthor");
     }
 }
+let navToHide = document.querySelector("main>nav>ul");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        const intersecting = entry.isIntersecting;
+        console.log(navToHide);
+
+        for (const listItem in navToHide.children) {
+            if (Object.hasOwnProperty.call(navToHide.children, listItem)) {
+                const li = navToHide.children[listItem];
+                console.log(
+                    li.textContent.trim().toLowerCase().replace(/\s/g, "")
+                );
+                if (li.textContent.trim().toLowerCase().replace(/\s/g, "") == 'top' || li.textContent.trim().toLowerCase().replace(/\s/g, "") == "reviews") {
+                    console.log('continued');
+                    continue;
+                }
+                li.style.display = intersecting ? "flex" : "none";
+
+            }
+        }
+    });
+});
+
+observer.observe(document.getElementById("globalNav"));
