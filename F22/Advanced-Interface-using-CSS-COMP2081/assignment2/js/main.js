@@ -1176,3 +1176,10 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.getElementById("globalNav"));
+
+
+let buyNowButton = document.querySelector(".buyNowButton");
+console.log(buyNowButton);
+buyNowButton.addEventListener('click', (e) => {
+    window.location.href = "https://www.amazon.com/exec/obidos/ASIN/1668002175?tag=simonsayscom";
+});
