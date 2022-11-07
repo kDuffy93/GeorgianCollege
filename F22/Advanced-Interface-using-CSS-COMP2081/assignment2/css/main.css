@@ -758,6 +758,7 @@ https://www.phpied.com/delay-loading-your-print-css/
         position: sticky;
         top: 5%;
         left: 17.5%;
+        z-index: 5;
     }
     
     #topSelect,
