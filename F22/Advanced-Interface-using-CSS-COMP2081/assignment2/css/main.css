@@ -235,9 +235,9 @@ https://www.phpied.com/delay-loading-your-print-css/
         }
     }
     
-    html {
-        height: 100%;
-        overflow: auto;
+    @font-face {
+        font-family: 'Hamlet';
+        src: url("hamlet-tertia18.otf") format("opentype");
     }
     
     body {
@@ -246,9 +246,16 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     html {
         min-width: 320px;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    html {
+        font-family: 'Josefin Sans', cursive;
     }
     
     body {
+        font-family: 'Josefin Sans', sans-serif;
         min-width: 98vw;
         min-height: 100vh;
         padding: 0;
@@ -272,6 +279,10 @@ https://www.phpied.com/delay-loading-your-print-css/
     header {
         height: 7.5vh;
         min-height: 60px;
+    }
+    
+    .buyNowButton {
+        font-family: 'Hamlet', cursive;
     }
     
     .buyNowButton:hover {
@@ -300,6 +311,8 @@ https://www.phpied.com/delay-loading-your-print-css/
     .nav-link {
         transition: 0.1s;
         color: #a42117;
+        font-family: 'Henny Penny', cursive;
+        letter-spacing: 1px;
     }
     
     .nav-link:hover {
@@ -341,7 +354,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     div.carousel-item:nth-child(1)>div:nth-child(2)>h5:nth-child(1) {
-        color: red;
+        color: #a42117;
         margin-top: -64.5vh;
     }
     
@@ -372,7 +385,10 @@ https://www.phpied.com/delay-loading-your-print-css/
         gap: 5vh;
     }
     
-    #about>article>div {}
+    #about>figure,
+    #about>article>figure {
+        font-family: 'Akaya Telivigala', cursive;
+    }
     
     .tab-content,
     #about>figure,
@@ -424,19 +440,44 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     #mediaReactions>article>div>h5 {
+        font-family: 'Akaya Telivigala', cursive;
         font-weight: bold;
         background-color: rgba(242, 238, 202, 0.404);
         border-radius: 50px;
         padding: 25px;
     }
     
+    .nav-link {}
+    
     #about>article>div :is(h2,
     h4) {
+        font-family: 'Henny Penny', cursive;
         text-decoration: underline;
         font-weight: bold;
         text-align: center;
         color: hsl(0, 8%, 12%);
+        text-decoration-thickness: 1px;
         /* color: rgba(237, 192, 84, 1); */
+    }
+    
+    #about>article>div :is(h2)::first-letter {
+        font-family: 'Allura', cursive;
+        font-size: 75pt;
+        vertical-align: sub;
+    }
+    
+    .titleSpan {
+        display: inline-block;
+        text-decoration: underline;
+        width: fit-content;
+        text-decoration-thickness: 1px;
+    }
+    
+    .titleSpan::first-letter {
+        font-family: 'Allura', sans-serif;
+        font-size: 65pt;
+        vertical-align: sub;
+        font-weight: 600;
     }
     
     #about>article>div {
@@ -480,7 +521,9 @@ https://www.phpied.com/delay-loading-your-print-css/
         padding-bottom: 3%;
     }
     
-    #nav-tab {
+    #nav-tab>button {
+        font-family: 'Henny Penny', cursive;
+        letter-spacing: 3px;
         border: 0;
         column-gap: 5vw;
         row-gap: 5vh;
@@ -761,8 +804,13 @@ https://www.phpied.com/delay-loading-your-print-css/
         z-index: 5;
     }
     
+    #tabButtonsExcerpt>button {
+        letter-spacing: 1px;
+    }
+    
     #topSelect,
     #bottomSelect {
+        font-family: 'Josefin San', cursive;
         align-self: center;
         width: fit-content;
         background-color: rgba(200, 200, 200, 0.75);
@@ -771,6 +819,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     #topSelect>option,
     #bottomSelect>option {
+        font-family: 'Josefin San', cursive;
         background-color: rgba(200, 200, 200, 0.75);
     }
     
