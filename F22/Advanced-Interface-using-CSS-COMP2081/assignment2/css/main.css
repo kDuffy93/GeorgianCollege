@@ -985,21 +985,19 @@ https://www.phpied.com/delay-loading-your-print-css/
         align-items: center !important;
     } */
         #tabButtonsExcerpt {
-            width: 76px;
-            font-size: x-small;
+            width: 80px;
+            font-size: 9px;
         }
     }
     
     @media (max-width: 500px) {
         #tabButtonsExcerpt {
-            width: 72px;
             font-size: 6pt;
         }
     }
     
     @media (max-width: 405px) {
         #tabButtonsExcerpt {
-            width: 68px;
             font-size: 5pt;
         }
     }
