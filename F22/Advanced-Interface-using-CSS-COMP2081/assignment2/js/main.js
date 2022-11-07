@@ -929,11 +929,15 @@ let buildMediaReactions = () => {
             const reviewObj = mediaReactions[review];
             let containerEl = document.createElement("article");
             containerEl.classList.add('contaier');
+
+            let titleContainerEl = document.createElement("div");
             let reviewerEl = document.createElement("h5");
             let reviewEl = document.createElement("p");
             reviewerEl.textContent = reviewObj.reviewer;
             reviewEl.textContent = reviewObj.review;
-            containerEl.appendChild(reviewerEl);
+
+            titleContainerEl.appendChild(reviewerEl);
+            containerEl.appendChild(titleContainerEl);
             containerEl.appendChild(reviewEl);
             mediaReactionsEl.appendChild(containerEl);
         }
