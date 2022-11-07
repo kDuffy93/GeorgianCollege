@@ -449,7 +449,7 @@ div.carousel-item:nth-child(1)>div:nth-child(2)>h5:nth-child(1) {
     font-weight: bold;
     background-color: rgba(242, 238, 202, 0.404);
     border-radius: 50px;
-    padding: 1.5vmin;
+    padding: 25px;
 }
 
 #about>article>div :is(h2,
@@ -502,6 +502,8 @@ main>nav {
 
 #nav-tab {
     border: 0;
+    column-gap: 5vw;
+    row-gap: 5vh;
 }
 
 .tab-content {
@@ -518,14 +520,6 @@ main>nav>ul>li {
     display: flex;
     flex-basis: 50%;
     justify-content: center;
-}
-
-#bookInfo>section:first-of-type {
-    max-width: 70%;
-}
-
-#bookInfo>section:nth-of-type(2) {
-    width: 30%
 }
 
 #bookInfo .nav-link {
@@ -554,8 +548,7 @@ main>nav>ul>li {
 .accordion-button:before {
     content: '';
     background-color: transparent;
-    width: 47.5%;
-    height: 1vh;
+    margin-right: auto;
 }
 
 .accordion-button:not(.collapsed) {
@@ -747,10 +740,11 @@ div>h5~ul {
 }
 
 #mediaReactions>article>div {
+    max-width: 40%;
     min-width: 30%;
     height: 100%;
     border-right: 1px solid black;
-    padding-right: 10px;
+    padding: 3vmin;
 }
 
 #excerpt>div {
@@ -961,6 +955,6 @@ div>h5~ul {
     border-left: 1px solid hsla(0, 13%, 82%, .55);
     border-bottom: 1px solid hsla(0, 13%, 82%, .55);
     background-image: -webkit-linear-gradient(315deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6);
-    background-image: linear-gradient(230deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6);
+    background-image: linear-gradient(225deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6);
     box-shadow: 6px 6px 9px -4px hsla(0, 13%, 82%, .53);
 }
