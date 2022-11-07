@@ -835,7 +835,7 @@ for (const li in mainNav) {
 
 
                         let authorInformation = document.getElementById("authorInformation");
-                        console.log(`ele 2: "${element1.textContent.trim().toLowerCase().replace(/\s/g, "")}" ==
+                        console.log(`ele 2: "${element2.textContent.trim().toLowerCase().replace(/\s/g, "")}" ==
                             "authorinformation"`);
                         if (
                             element.textContent.trim().toLowerCase().replace(/\s/g, "") ==

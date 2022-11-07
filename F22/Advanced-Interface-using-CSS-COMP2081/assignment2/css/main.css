@@ -543,6 +543,25 @@ main>nav>ul>li {
     background-color: #ffffffa8 !important;
 }
 
+.accordion-button {
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+.accordion-button>div {}
+
+.accordion-button:before {
+    content: '';
+    background-color: transparent;
+    width: 47.5%;
+    height: 1vh;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #a42117;
+}
+
 .accordion-body>div>section {
     display: flex;
     gap: 5%;
