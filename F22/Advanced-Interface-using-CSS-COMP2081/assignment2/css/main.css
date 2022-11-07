@@ -1,28 +1,20 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-
-
-/*
+    /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+    /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+    /*
 * What follows is the result of much research on cross-browser styling.
 * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
 * Kroc Camen, and the H5BP dev community and team.
 */
-
-
-/* ==========================================================================
+    /* ==========================================================================
 Base styles: opinionated defaults
 ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-
-/*
+    
+    html {
+        color: #222;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    /*
 * Remove text-shadow in selection highlight:
 * https://twitter.com/miketaylr/status/12228805301
 *
@@ -31,89 +23,73 @@ html {
 *
 * Customize the background color to match your design.
 */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-
-/*
+    
+     ::-moz-selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+    
+     ::selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+    /*
 * A better looking default horizontal rule
 */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-
-/*
+    
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+    /*
 * Remove the gap between audio, canvas, iframes,
 * images, videos and the bottom of their containers:
 * https://github.com/h5bp/html5-boilerplate/issues/440
 */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-
-/*
+    
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+        vertical-align: middle;
+    }
+    /*
 * Remove default fieldset styles.
 */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-
-/*
+    
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    /*
 * Allow only vertical resizing of textareas.
 */
-
-textarea {
-    resize: vertical;
-}
-
-
-/* ==========================================================================
+    
+    textarea {
+        resize: vertical;
+    }
+    /* ==========================================================================
 Author's custom styles
 ========================================================================== */
-
-
-/* ==========================================================================
+    /* ==========================================================================
 Helper classes
 ========================================================================== */
-
-
-/*
+    /*
 * Hide visually and from screen readers
 */
-
-.hidden,
-[hidden] {
-    display: none !important;
-}
-
-
-/*
+    
+    .hidden,
+    [hidden] {
+        display: none !important;
+    }
+    /*
 * Hide only visually, but have it available for screen readers:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 *
@@ -121,49 +97,43 @@ Helper classes
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
-
-.sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
-}
-
-
-/*
+    
+    .sr-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        /* 1 */
+    }
+    /*
 * Extends the .sr-only class to allow the element
 * to be focusable when navigated to via the keyboard:
 * https://www.drupal.org/node/897638
 */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    white-space: inherit;
-    width: auto;
-}
-
-
-/*
+    
+    .sr-only.focusable:active,
+    .sr-only.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        white-space: inherit;
+        width: auto;
+    }
+    /*
 * Hide visually and from screen readers, but maintain layout
 */
-
-.invisible {
-    visibility: hidden;
-}
-
-
-/*
+    
+    .invisible {
+        visibility: hidden;
+    }
+    /*
 * Clearfix: contain floats
 *
 * For modern browsers
@@ -174,809 +144,829 @@ Helper classes
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
-
-.clearfix::before,
-.clearfix::after {
-    content: " ";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
-
-/* ==========================================================================
+    
+    .clearfix::before,
+    .clearfix::after {
+        content: " ";
+        display: table;
+    }
+    
+    .clearfix::after {
+        clear: both;
+    }
+    /* ==========================================================================
 EXAMPLE Media Queries for Responsive Design.
 These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-
-/* ==========================================================================
+    
+    @media only screen and (min-width: 35em) {
+        /* Style adjustments for viewports that meet the condition */
+    }
+    
+    @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
+    }
+    /* ==========================================================================
 Print styles.
 Inlined to avoid the additional HTTP request:
 https://www.phpied.com/delay-loading-your-print-css/
 ========================================================================== */
-
-@media print {
-    *,
-    *::before,
-    *::after {
-        background: #fff !important;
-        color: #000 !important;
-        /* Black prints faster */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-    a[href]::after {
-        content: " ("attr(href) ")";
-    }
-    abbr[title]::after {
-        content: " ("attr(title) ")";
-    }
-    /*
+    
+    @media print {
+        *,
+        *::before,
+        *::after {
+            background: #fff !important;
+            color: #000 !important;
+            /* Black prints faster */
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+        a[href]::after {
+            content: " ("attr(href) ")";
+        }
+        abbr[title]::after {
+            content: " ("attr(title) ")";
+        }
+        /*
 * Don't show links that are fragment identifiers,
 * or use the `javascript:` pseudo protocol
 */
-    a[href^="#"]::after,
-    a[href^="javascript:"]::after {
-        content: "";
-    }
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-    /*
+        a[href^="#"]::after,
+        a[href^="javascript:"]::after {
+            content: "";
+        }
+        pre {
+            white-space: pre-wrap !important;
+        }
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+        /*
 * Printing Tables:
 * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
 */
-    thead {
-        display: table-header-group;
+        thead {
+            display: table-header-group;
+        }
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
     }
-    tr,
-    img {
-        page-break-inside: avoid;
+    
+    html {
+        height: 100%;
+        overflow: auto;
     }
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
+    
+    body {
+        height: 100%;
     }
-    h2,
-    h3 {
-        page-break-after: avoid;
+    
+    html {
+        min-width: 320px;
     }
-}
-
-html {
-    height: 100%;
-    overflow: auto;
-}
-
-body {
-    height: 100%;
-}
-
-html {
-    min-width: 320px;
-}
-
-body {
-    min-width: 98vw;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-}
-
-body>span:first-of-type {
-    min-width: 100vw;
-    min-height: 100vh;
-    background-color: #140D0F;
-    background-image: url('../img/bg.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-header {
-    height: 7.5vh;
-    min-height: 60px;
-}
-
-.buyNowButton:hover {
-    scale: 1.05;
-}
-
-header>nav>a>img {
-    width: 85px;
-    height: 50px;
-    transition: 0.1s;
-}
-
-header>nav>a>img:hover {
-    scale: 1.05;
-}
-
-.show {
-    text-align: center;
-    z-index: 20;
-}
-
-.collapsing {
-    transition: none !important;
-}
-
-.nav-link {
-    transition: 0.1s;
-    color: #a42117;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-    scale: 1.05;
-    color: #c63022;
-}
-
-main>section>section {
-    margin-bottom: 5vh;
-}
-
-main>section>section:nth-of-type(2) {}
-
-ul>li>a {
-    font-weight: bold !important;
-}
-
-.carousel-item {
-    height: inherit;
-    width: inherit;
-}
-
-#carouselExampleIndicators {
-    grid-area: carousel;
-    width: 35vw;
-    height: 67vw;
-    max-height: 70vh;
-    min-width: 160px;
-    min-height: 225px;
-}
-
-.carousel-item>img {
-    height: 60vw;
-    width: 30vw;
-    max-height: 70vh;
-    min-width: 140px;
-    min-height: 200px;
-}
-
-div.carousel-item:nth-child(1)>div:nth-child(2)>h5:nth-child(1) {
-    color: red;
-    margin-top: -64.5vh;
-}
-
-.mainContent {
-    display: grid;
-    grid-template-columns: repeat(1fr, 3);
-    grid-template-areas: "introContent introContent introContent""BookInformation BookInformation BookInformation""reviews reviews reviews";
-}
-
-#about {
-    grid-area: introContent;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-}
-
-#about>article {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    min-width: 230px;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    gap: 5vh;
-}
-
-#about>article>div {}
-
-.tab-content,
-#about>figure,
-#about>article>figure {
-    font-weight: bold;
-    color: #140D0F;
-    background-color: #01448880;
-    height: fit-content;
-    padding: 1vmin;
-    border-radius: 50px;
-    text-align: center;
-}
-
-#about>figure>div,
-#about>article>figure>div,
-.inset-Readable,
-#mediaReactions>article>p,
-#authorAcordion>section>section>section>div {
-    width: 80%;
-    background-color: rgba(242, 238, 202, 0.733);
-    margin: 2vh 0 2vh 10%;
-    padding: 2vmin;
-    padding-left: 3vmin;
-    padding-right: 3vmin;
-    border-radius: 5%;
-}
-
-#authorAcordion>section>section>section>div {
-    width: 90%;
-    margin: 2vh 0 2vh 5%;
-}
-
-#mediaReactions>article>p {
-    margin-left: 0;
-    border-radius: 60px;
-    margin-right: 2vw;
-}
-
-#mediaReactions>article>div>h5 {
-    font-weight: bold;
-    background-color: rgba(242, 238, 202, 0.404);
-    border-radius: 50px;
-    padding: 25px;
-}
-
-#about>article>div :is(h2,
-h4) {
-    text-decoration: underline;
-    font-weight: bold;
-    text-align: center;
-    color: hsl(0, 8%, 12%);
-    /* color: rgba(237, 192, 84, 1); */
-}
-
-#about>article>div {
-    height: fit-content;
-    padding: 0 25px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2.5vh;
-    background-color: rgba(242, 238, 202, 0.2);
-    width: fit-content;
-}
-
-#about>figure {
-    display: none;
-}
-
-figcaption {
-    text-decoration: underline;
-    text-align: center;
-}
-
-.break {
-    display: none;
-}
-
-main>nav {
-    justify-content: center !important;
-}
-
-#bookInfo {
-    min-height: 50vh;
-    grid-area: BookInformation;
-    padding-bottom: 3%;
-    justify-content: center;
-    width: 75vw;
-    margin-left: 12.5vw;
-}
-
-#bookInfo>nav {
-    padding-bottom: 3%;
-}
-
-#nav-tab {
-    border: 0;
-    column-gap: 5vw;
-    row-gap: 5vh;
-}
-
-.tab-content {
-    margin-top: 2vh;
-}
-
-main>nav>ul>li {
-    background-color: #01448830;
-    text-align: center;
-    border-radius: 10% / 25%;
-}
-
-#bookInfo {
-    display: flex;
-    flex-basis: 50%;
-    justify-content: center;
-}
-
-#bookInfo .nav-link {
-    border-radius: 10% / 50%;
-    background-color: rgba(242, 238, 202, 0.6);
-    color: #a42117;
-    font-weight: bold;
-}
-
-#bookInfo .nav-link:hover {
-    color: #c63022;
-    scale: 1.2;
-}
-
-#bookInfo .nav-link.active {
-    background-color: #ffffffa8 !important;
-}
-
-.accordion-button {
-    font-weight: bold;
-    text-align: center;
-    justify-content: center;
-}
-
-.accordion-button>div {}
-
-.accordion-button:before {
-    content: '';
-    background-color: transparent;
-    margin-right: auto;
-}
-
-.accordion-button:not(.collapsed) {
-    color: #a42117;
-}
-
-.accordion-body>div>section {
-    display: flex;
-    gap: 5%;
-}
-
-.accordion-body>div>section>section:first-of-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-width: 125px;
-    margin-bottom: 5%;
-}
-
-.mainContent>section:nth-of-type(3) {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-}
-
-#bottomSection {
-    width: 85vw;
-}
-
-#reviews>div {
-    padding: var(--bs-accordion-body-padding-y) 0;
-}
-
-#reviewsButton,
-#reviewsButton>button,
-#authorAcordion>section>h2,
-#authorAcordion>section>h2>button {
-    background-color: rgba(200, 200, 200, 0.3);
-}
-
-{
-    background-color: rgba(242, 238, 202, 0.6);
-}
-
-#reviewsInfo,
-#authorAcordion>.accordion-item {
-    background-color: #01448830;
-}
-
-#productDetails.show {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.buyLinks>section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 3vw;
-    column-gap: 4vh;
-}
-
-#ebook,
-#about>.buyLinks>section:nth-of-type(2) {
-    display: none;
-}
-
-#about>article:nth-child(2)>aside {
-    display: none;
-    max-width: 50vw;
-}
-
-#about>article:nth-child(2)>aside>section>a>img {
-    max-width: 100px;
-}
-
-#about>aside {
-    align-self: flex-start;
-    order: 3;
-    width: 100vw;
-    margin: 5vh 0;
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-}
-
-#about>aside>section>a>img,
-#about>article:nth-child(2)>aside>section>a>img {
-    background-color: rgba(242, 238, 202, 0.75);
-    border-radius: 15% / 25%;
-    max-width: 125px;
-    min-width: 80px;
-    padding: 5px;
-}
-
-#about>aside>section>a>img:hover,
-#about>article:nth-child(2)>aside>section>a>img:hover {
-    scale: 1.1;
-    border: #333 1px solid;
-    background-color: rgba(242, 238, 202, 1);
-}
-
-aside.buyLinks {
-    border-radius: 10% / 40%;
-    padding: 0% 1%;
-    font-weight: bold;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-}
-
-#authorInformation {
-    display: grid;
-    grid-template-columns: repeat(12.5vw, 5);
-    grid-template-rows: auto;
-    grid-template-areas: "picCard picCard short short short""picCard picCard short short short""Description Description Description Description Description""Description Description Description Description Description";
-}
-
-#authorCarousel>div>div>img {
-    max-width: 100%;
-    max-height: 50vh;
-    border-radius: 12.5% / 37.5%;
-}
-
-#authorInformation>section:first-of-type {
-    width: 100%;
-    grid-area: picCard;
-    align-self: center;
-}
-
-#authorInformation>section:nth-child(1) {
-    margin-left: 2vw;
-}
-
-#authorInformation>section:nth-child(3) {
-    grid-area: Description;
-    margin-top: 5vh;
-}
-
-#authorInformation>section:nth-child(2) {
-    grid-area: short;
-    align-self: center;
-}
-
-#authorInformation.show {
-    display: grid;
-}
-
-#authorInformation:not(.show) {
-    display: none;
-}
-
-div>h5~ul {
-    margin-left: 10%;
-    width: 80%;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5vw;
-    column-gap: 3vh;
-    justify-content: space-evenly;
-    background-color: rgba(242, 238, 202, 0.733);
-    border-radius: 20%/20%;
-    padding: 1% 0%;
-}
-
-#authorInformation>section:nth-of-type(2)>div>h5 {
-    text-decoration: underline;
-    font-weight: bold;
-    align-self: flex-start;
-}
-
-#authorInformation>section:nth-of-type(2) {
-    gap: 2.5vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.sticky-top {
-    padding-bottom: 0;
-}
-
-#mediaReactions>article {
-    display: flex;
-    gap: 3%;
-    border-bottom: #333 solid 1px;
-    margin-bottom: 2vh;
-    align-items: center;
-}
-
-#mediaReactions>article>div {
-    max-width: 40%;
-    min-width: 30%;
-    height: 100%;
-    border-right: 1px solid black;
-    padding: 3vmin;
-}
-
-#excerpt>div {
-    justify-content: space-between;
-}
-
-#tabContentExcerpt {
-    min-height: 65vh;
-    margin-right: 3.25%;
-    padding: 5% 10% 5% 3%;
-    align-self: center;
-    width: 75%;
-    background-color: rgba(242, 238, 202, 0.733);
-    position: relative;
-    border-radius: 10px 0px 0px 10px;
-}
-
-#tabButtonsExcerpt {
-    gap: 1vh;
-    position: sticky;
-    top: 5%;
-}
-
-#topSelect,
-#bottomSelect {
-    align-self: center;
-    width: fit-content;
-    background-color: rgba(200, 200, 200, 0.75);
-    margin-bottom: 5vh;
-}
-
-#topSelect>option,
-#bottomSelect>option {
-    background-color: rgba(200, 200, 200, 0.75);
-}
-
-#topSelect>option:hover,
-#bottomSelect>option:hover {
-    background-color: rgba(200, 200, 200, 1);
-}
-
-.carousel-inner {
-    width: 96% !important;
-}
-
-@media (max-width: 768px) {
+    
+    body {
+        min-width: 98vw;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body>span:first-of-type {
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: #140D0F;
+        background-image: url('../img/bg.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    header {
+        height: 7.5vh;
+        min-height: 60px;
+    }
+    
+    .buyNowButton:hover {
+        scale: 1.05;
+    }
+    
+    header>nav>a>img {
+        width: 85px;
+        height: 50px;
+        transition: 0.1s;
+    }
+    
+    header>nav>a>img:hover {
+        scale: 1.05;
+    }
+    
+    .show {
+        text-align: center;
+        z-index: 20;
+    }
+    
+    .collapsing {
+        transition: none !important;
+    }
+    
+    .nav-link {
+        transition: 0.1s;
+        color: #a42117;
+    }
+    
+    .nav-link:hover {
+        text-decoration: underline;
+        scale: 1.05;
+        color: #c63022;
+    }
+    
+    main>section>section {
+        margin-bottom: 5vh;
+    }
+    
+    main>section>section:nth-of-type(2) {}
+    
+    ul>li>a {
+        font-weight: bold !important;
+    }
+    
+    .carousel-item {
+        height: inherit;
+        width: inherit;
+    }
+    
+    #carouselExampleIndicators {
+        grid-area: carousel;
+        width: 35vw;
+        height: 67vw;
+        max-height: 70vh;
+        min-width: 160px;
+        min-height: 225px;
+    }
+    
+    .carousel-item>img {
+        height: 60vw;
+        width: 30vw;
+        max-height: 70vh;
+        min-width: 140px;
+        min-height: 200px;
+    }
+    
+    div.carousel-item:nth-child(1)>div:nth-child(2)>h5:nth-child(1) {
+        color: red;
+        margin-top: -64.5vh;
+    }
+    
+    .mainContent {
+        display: grid;
+        grid-template-columns: repeat(1fr, 3);
+        grid-template-areas: "introContent introContent introContent""BookInformation BookInformation BookInformation""reviews reviews reviews";
+    }
+    
+    #about {
+        grid-area: introContent;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+    }
+    
+    #about>article {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        min-width: 230px;
+        align-items: center;
+        justify-self: center;
+        align-self: center;
+        gap: 5vh;
+    }
+    
+    #about>article>div {}
+    
+    .tab-content,
+    #about>figure,
+    #about>article>figure {
+        font-weight: bold;
+        color: #140D0F;
+        background-color: #01448880;
+        height: fit-content;
+        padding: 1vmin;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+    #about>figure>div,
+    #about>article>figure>div,
+    .inset-Readable,
+    #mediaReactions>article>p,
+    #authorAcordion>section>section>section>div {
+        width: 80%;
+        background-color: rgba(242, 238, 202, 0.733);
+        margin: 2vh 0 2vh 10%;
+        padding: 2vmin;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+        border-radius: 5%;
+    }
+    
+    #authorAcordion>section>section>section>div {
+        width: 90%;
+        margin: 2vh 0 2vh 5%;
+    }
+    
+    #mediaReactions>article>p {
+        margin-left: 0;
+        border-radius: 60px;
+        margin-right: 2vw;
+    }
+    
+    #mediaReactions>article>div>h5 {
+        font-weight: bold;
+        background-color: rgba(242, 238, 202, 0.404);
+        border-radius: 50px;
+        padding: 25px;
+    }
+    
+    #about>article>div :is(h2,
+    h4) {
+        text-decoration: underline;
+        font-weight: bold;
+        text-align: center;
+        color: hsl(0, 8%, 12%);
+        /* color: rgba(237, 192, 84, 1); */
+    }
+    
+    #about>article>div {
+        height: fit-content;
+        padding: 0 25px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5vh;
+        background-color: rgba(242, 238, 202, 0.2);
+        width: fit-content;
+    }
+    
+    #about>figure {
+        display: none;
+    }
+    
+    figcaption {
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .break {
+        display: none;
+    }
+    
+    main>nav {
+        justify-content: center !important;
+    }
+    
+    #bookInfo {
+        min-height: 50vh;
+        grid-area: BookInformation;
+        padding-bottom: 3%;
+        justify-content: center;
+        width: 75vw;
+        margin-left: 12.5vw;
+    }
+    
+    #bookInfo>nav {
+        padding-bottom: 3%;
+    }
+    
+    #nav-tab {
+        border: 0;
+        column-gap: 5vw;
+        row-gap: 5vh;
+    }
+    
+    .tab-content {
+        margin-top: 2vh;
+    }
+    
+    main>nav>ul>li {
+        background-color: #01448830;
+        text-align: center;
+        border-radius: 10% / 25%;
+    }
+    
+    #bookInfo {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: center;
+    }
+    
+    #bookInfo .nav-link {
+        border-radius: 10% / 50%;
+        background-color: rgba(242, 238, 202, 0.6);
+        color: #a42117;
+        font-weight: bold;
+    }
+    
+    #bookInfo .nav-link:hover {
+        color: #c63022;
+        scale: 1.2;
+    }
+    
+    #bookInfo .nav-link.active {
+        background-color: #ffffffa8 !important;
+    }
+    
+    .accordion-button {
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .accordion-button>div {}
+    
+    .accordion-button:before {
+        content: '';
+        background-color: transparent;
+        margin-right: auto;
+    }
+    
+    .accordion-button:not(.collapsed) {
+        color: #a42117;
+    }
+    
+    .accordion-body>div>section {
+        display: flex;
+        gap: 5%;
+    }
+    
+    .accordion-body>div>section>section:first-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 125px;
+        margin-bottom: 5%;
+    }
+    
+    .mainContent>section:nth-of-type(3) {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #bottomSection {
+        width: 85vw;
+    }
+    
+    #reviews>div {
+        padding: var(--bs-accordion-body-padding-y) 0;
+    }
+    
+    #reviewsButton,
+    #reviewsButton>button,
+    #authorAcordion>section>h2,
+    #authorAcordion>section>h2>button {
+        background-color: rgba(200, 200, 200, 0.3);
+    }
+    
+    {
+        background-color: rgba(242, 238, 202, 0.6);
+    }
+    
+    #reviewsInfo,
+    #authorAcordion>.accordion-item {
+        background-color: #01448830;
+    }
+    
+    #productDetails.show {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .buyLinks>section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 3vw;
+        column-gap: 4vh;
+    }
+    
+    #ebook,
+    #about>.buyLinks>section:nth-of-type(2) {
+        display: none;
+    }
+    
+    #about>article:nth-child(2)>aside {
+        display: none;
+        max-width: 50vw;
+    }
+    
+    #about>article:nth-child(2)>aside>section>a>img {
+        max-width: 100px;
+    }
+    
+    #about>aside {
+        align-self: flex-start;
+        order: 3;
+        width: 100vw;
+        margin: 5vh 0;
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly;
+    }
+    
+    #about>aside>section>a>img,
+    #about>article:nth-child(2)>aside>section>a>img {
+        background-color: rgba(242, 238, 202, 0.75);
+        border-radius: 15% / 25%;
+        max-width: 125px;
+        min-width: 80px;
+        padding: 5px;
+    }
+    
+    #about>aside>section>a>img:hover,
+    #about>article:nth-child(2)>aside>section>a>img:hover {
+        scale: 1.1;
+        border: #333 1px solid;
+        background-color: rgba(242, 238, 202, 1);
+    }
+    
+    aside.buyLinks {
+        border-radius: 10% / 40%;
+        padding: 0% 1%;
+        font-weight: bold;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    
+    #authorInformation {
+        display: grid;
+        grid-template-columns: repeat(12.5vw, 5);
+        grid-template-rows: auto;
+        grid-template-areas: "picCard picCard short short short""picCard picCard short short short""Description Description Description Description Description""Description Description Description Description Description";
+    }
+    
+    #authorCarousel>div>div>img {
+        max-width: 100%;
+        max-height: 50vh;
+        border-radius: 12.5% / 37.5%;
+    }
+    
+    #authorInformation>section:first-of-type {
+        width: 100%;
+        grid-area: picCard;
+        align-self: center;
+    }
+    
+    #authorInformation>section:nth-child(1) {
+        margin-left: 2vw;
+    }
+    
+    #authorInformation>section:nth-child(3) {
+        grid-area: Description;
+        margin-top: 5vh;
+    }
+    
+    #authorInformation>section:nth-child(2) {
+        grid-area: short;
+        align-self: center;
+    }
+    
+    #authorInformation.show {
+        display: grid;
+    }
+    
+    #authorInformation:not(.show) {
+        display: none;
+    }
+    
+    div>h5~ul {
+        margin-left: 10%;
+        width: 80%;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5vw;
+        column-gap: 3vh;
+        justify-content: space-evenly;
+        background-color: rgba(242, 238, 202, 0.733);
+        border-radius: 20%/20%;
+        padding: 1% 0%;
+    }
+    
+    #authorInformation>section:nth-of-type(2)>div>h5 {
+        text-decoration: underline;
+        font-weight: bold;
+        align-self: flex-start;
+    }
+    
+    #authorInformation>section:nth-of-type(2) {
+        gap: 2.5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sticky-top {
+        padding-bottom: 0;
+    }
+    
+    #mediaReactions>article {
+        display: flex;
+        gap: 3%;
+        border-bottom: #333 solid 1px;
+        margin-bottom: 2vh;
+        align-items: center;
+    }
+    
+    #mediaReactions>article>div {
+        max-width: 40%;
+        min-width: 30%;
+        height: 100%;
+        border-right: 1px solid black;
+        padding: 3vmin;
+    }
+    
+    #excerpt>div {
+        justify-content: space-between;
+    }
+    
+    #tabContentExcerpt {
+        min-height: 65vh;
+        margin-right: 3.25%;
+        padding: 5% 10% 5% 3%;
+        align-self: center;
+        width: 75%;
+        background-color: rgba(242, 238, 202, 0.733);
+        position: relative;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
     #tabButtonsExcerpt {
+        margin-top: 2.5%;
+        gap: 1vh;
+        position: sticky;
+        top: 5%;
+        left: 17.5%;
+    }
+    
+    #topSelect,
+    #bottomSelect {
+        align-self: center;
+        width: fit-content;
+        background-color: rgba(200, 200, 200, 0.75);
+        margin-bottom: 5vh;
+    }
+    
+    #topSelect>option,
+    #bottomSelect>option {
+        background-color: rgba(200, 200, 200, 0.75);
+    }
+    
+    #topSelect>option:hover,
+    #bottomSelect>option:hover {
+        background-color: rgba(200, 200, 200, 1);
+    }
+    
+    .carousel-inner {
+        width: 96% !important;
+    }
+    
+    @media (max-width: 768px) {
+        #about>article:nth-child(2)>aside>section>a>img {
+            transform: scale(1.2);
+        }
+        header>nav>.show {
+            background-color: rgba(242, 238, 202, 0.733);
+            min-width: fit-content;
+            max-width: 30%;
+            flex-basis: 100vw;
+            margin-left: unset !important;
+        }
+        .break {
+            display: unset;
+            flex-basis: 100%;
+            height: 0;
+        }
+        main>nav>ul {
+            display: none !important;
+        }
+        main>nav {
+            justify-content: flex-end !important;
+            margin-right: 2.5vw;
+        }
+        .carousel-item>img {
+            height: 60vw;
+            width: 42vw;
+            max-height: 70vh;
+        }
+        header>nav {
+            justify-content: space-evenly !important;
+        }
+        header>nav>div>ul {
+            align-items: center !important;
+        }
+        #bookInfo>section:first-of-type {
+            max-width: 100%;
+        }
+        #bookInfo>section:nth-of-type(2) {
+            width: 50%
+        }
+        .accordion-body>div>section>section:first-of-type {
+            flex-direction: column !important;
+            justify-content: space-evenly;
+        }
+        #bottomSection {
+            width: 100vw !important;
+            grid-area: reviews;
+        }
+    }
+    
+    @media (max-width: 410px) {
+        #about>article:nth-child(2)>div:nth-child(1) {
+            margin-right: 12.5%;
+        }
+        #carouselExampleIndicators {
+            margin-right: 12.5%;
+        }
+        #about>aside>section>a>img {
+            max-width: 90px;
+        }
+        #about>article:nth-child(2)>aside {
+            display: none;
+        }
+        #about>aside {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #about>aside>section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #about>article>div {
+            margin-bottom: 2vh;
+        }
+        #about>article {
+            order: -1;
+            width: 100%;
+        }
+        #about {
+            flex-basis: 100%;
+        }
+        main>nav {
+            max-height: 5vh;
+        }
+        main>nav>button {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+        .sticky-top {
+            transform: translateY(7vh);
+        }
+        #about>article:nth-child(2)>aside>section>a>img {
+            transform: scale(1.1);
+        }
+    }
+    
+    @media (min-width: 991px) {
+        #about>aside>section>a>img {
+            transform: scale(1.75);
+        }
+    }
+    
+    @media (max-width: 991px) {
+        #tabButtonsExcerpt {
+            left: 10%;
+        }
+        #bookInfo {
+            width: 95vw;
+            margin-left: 2.5vw;
+        }
+        #about>article:nth-child(2)>aside>section>a>img {
+            transform: scale(1.2);
+        }
+        #about>article>figure {
+            display: none;
+        }
+        #about>figure {
+            display: block;
+            margin-top: 7.5vh;
+        }
+        #about>article {
+            align-self: center;
+        }
+        .accordion-body>div>section {
+            flex-direction: column;
+        }
+        .accordion-body>div>section>section:first-of-type {
+            flex-direction: row;
+            justify-content: space-evenly;
+            border-bottom: #333 solid 1px;
+        }
+        #authorInformation {
+            grid-template-areas: ". picCard picCard picCard ."". short short short .""Description Description Description Description Description""Description Description Description Description Description";
+        }
+        #authorInformation>section:first-of-type,
+        #authorInformation>section:nth-child(2) {
+            padding-bottom: 2vh;
+        }
+        #authorInformation>section:nth-child(2) {}
+    }
+    
+    @media (max-width: 675px) {
+        /*  #tabButtonsExcerpt {
         flex-direction: row !important;
         justify-content: space-evenly;
         position: inherit;
     }
-    #about>article:nth-child(2)>aside>section>a>img {
-        transform: scale(1.2);
-    }
     #excerpt>div {
         flex-direction: column !important;
         align-items: center !important;
+    } */
+        #tabButtonsExcerpt {
+            width: 76px;
+            font-size: x-small;
+        }
     }
-    header>nav>.show {
-        background-color: rgba(242, 238, 202, 0.733);
-        min-width: fit-content;
-        max-width: 30%;
-        flex-basis: 100vw;
-        margin-left: unset !important;
+    
+    @media (max-width: 500px) {
+        #tabButtonsExcerpt {
+            width: 72px;
+            font-size: 6pt;
+        }
     }
-    .break {
-        display: unset;
-        flex-basis: 100%;
-        height: 0;
+    
+    @media (max-width: 405px) {
+        #tabButtonsExcerpt {
+            width: 68px;
+            font-size: 5pt;
+        }
     }
-    main>nav>ul {
-        display: none !important;
+    
+    @media (max-width: 991px) and (min-width: 480px) {
+        #about>aside {
+            display: none;
+        }
+        #about>article:nth-child(2)>aside {
+            display: flex;
+            flex-direction: column;
+        }
     }
-    main>nav {
-        justify-content: flex-end !important;
-        margin-right: 2.5vw;
+    
+    @media (max-width: 991px) and (min-width: 768px) {
+        #authorCarousel {
+            width: 65%;
+            margin-left: 17.5%;
+        }
     }
-    .carousel-item>img {
-        height: 60vw;
-        width: 42vw;
-        max-height: 70vh;
+    
+    @media (max-width: 768px) and (min-width: 480px) {
+        #authorCarousel {
+            width: 80%;
+            margin-left: 10%;
+        }
     }
-    header>nav {
-        justify-content: space-evenly !important;
+    /* I took this CSS from: https://blog.avada.io/css/book-effects#book-html-css-only  > corner fold*/
+    
+    .corner-fold {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        border-left: 1px solid hsla(0, 13%, 82%, .55);
+        border-bottom: 1px solid hsla(0, 13%, 82%, .55);
+        background-image: -webkit-linear-gradient(315deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6);
+        background-image: linear-gradient(225deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6);
+        box-shadow: 6px 6px 9px -4px hsla(0, 13%, 82%, .53);
     }
-    header>nav>div>ul {
-        align-items: center !important;
-    }
-    #bookInfo>section:first-of-type {
-        max-width: 100%;
-    }
-    #bookInfo>section:nth-of-type(2) {
-        width: 50%
-    }
-    .accordion-body>div>section>section:first-of-type {
-        flex-direction: column !important;
-        justify-content: space-evenly;
-    }
-    #bottomSection {
-        width: 100vw !important;
-        grid-area: reviews;
-    }
-}
-
-@media (max-width: 410px) {
-    #about>article:nth-child(2)>div:nth-child(1) {
-        margin-right: 12.5%;
-    }
-    #carouselExampleIndicators {
-        margin-right: 12.5%;
-    }
-    #about>aside>section>a>img {
-        max-width: 90px;
-    }
-    #about>article:nth-child(2)>aside {
-        display: none;
-    }
-    #about>aside {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #about>aside>section {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #about>article>div {
-        margin-bottom: 2vh;
-    }
-    #about>article {
-        order: -1;
-        width: 100%;
-    }
-    #about {
-        flex-basis: 100%;
-    }
-    main>nav {
-        max-height: 5vh;
-    }
-    main>nav>button {
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-    }
-    .sticky-top {
-        transform: translateY(7vh);
-    }
-    #about>article:nth-child(2)>aside>section>a>img {
-        transform: scale(1.1);
-    }
-}
-
-@media (min-width: 991px) {
-    #about>aside>section>a>img {
-        transform: scale(1.75);
-    }
-}
-
-@media (max-width: 991px) {
-    #bookInfo {
-        width: 95vw;
-        margin-left: 2.5vw;
-    }
-    #about>article:nth-child(2)>aside>section>a>img {
-        transform: scale(1.2);
-    }
-    #about>article>figure {
-        display: none;
-    }
-    #about>figure {
-        display: block;
-        margin-top: 7.5vh;
-    }
-    #about>article {
-        align-self: center;
-    }
-    .accordion-body>div>section {
-        flex-direction: column;
-    }
-    .accordion-body>div>section>section:first-of-type {
-        flex-direction: row;
-        justify-content: space-evenly;
-        border-bottom: #333 solid 1px;
-    }
-    #authorInformation {
-        grid-template-areas: ". picCard picCard picCard ."". short short short .""Description Description Description Description Description""Description Description Description Description Description";
-    }
-    #authorInformation>section:first-of-type,
-    #authorInformation>section:nth-child(2) {
-        padding-bottom: 2vh;
-    }
-    #authorInformation>section:nth-child(2) {}
-}
-
-@media (max-width: 991px) and (min-width: 480px) {
-    #about>aside {
-        display: none;
-    }
-    #about>article:nth-child(2)>aside {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-    #authorCarousel {
-        width: 65%;
-        margin-left: 17.5%;
-    }
-}
-
-@media (max-width: 768px) and (min-width: 480px) {
-    #authorCarousel {
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-
-
-/* I took this CSS from: https://blog.avada.io/css/book-effects#book-html-css-only  > corner fold*/
-
-.corner-fold {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 40px;
-    height: 40px;
-    border-left: 1px solid hsla(0, 13%, 82%, .55);
-    border-bottom: 1px solid hsla(0, 13%, 82%, .55);
-    background-image: -webkit-linear-gradient(315deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6);
-    background-image: linear-gradient(225deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6);
-    box-shadow: 6px 6px 9px -4px hsla(0, 13%, 82%, .53);
-}

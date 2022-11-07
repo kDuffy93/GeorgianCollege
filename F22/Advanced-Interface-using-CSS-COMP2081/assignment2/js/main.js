@@ -873,9 +873,8 @@ let buildExcerpt = (pageData, page) => {
     newButton.ariaSelected = false;
 
     newButton.addEventListener("click", (e) => {
-        let bookInfo = document.getElementById("bookInfo");
-        console.log(bookInfo);
-        bookInfo.scrollTo(1, 1);
+        let bookInfo = document.querySelector("#excerpt>div");
+        bookInfo.scrollIntoView();
     })
     let newContent = document.createElement('div');
     newContent.classList.add("tab-pane");
