@@ -507,6 +507,15 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     main>nav {
         justify-content: center !important;
+        pointer-events: none;
+    }
+    
+    main>nav>ul {
+        pointer-events: auto;
+    }
+    
+    main>nav>button {
+        pointer-events: auto;
     }
     
     #bookInfo {
