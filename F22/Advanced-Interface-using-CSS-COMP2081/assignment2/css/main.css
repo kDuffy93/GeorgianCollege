@@ -400,6 +400,18 @@ https://www.phpied.com/delay-loading-your-print-css/
         border-radius: 5%;
     }
     
+    #authorInformation>section:nth-of-type(2)>p:nth-of-type(2)>a,
+    #authorInformation>section:nth-of-type(2)>p:nth-of-type(1)>span {
+        background-color: rgba(242, 238, 202, 0.733);
+        padding: 2vmin;
+        width: fit-content;
+        border-radius: 10px;
+    }
+    
+    #authorInformation>section:nth-of-type(2)>p:nth-of-type(1) {
+        margin-top: 2vh;
+    }
+    
     #authorAcordion>section>section>section>div {
         width: 90%;
         margin: 2vh 0 2vh 5%;
@@ -635,6 +647,14 @@ https://www.phpied.com/delay-loading-your-print-css/
         grid-template-columns: repeat(12.5vw, 5);
         grid-template-rows: auto;
         grid-template-areas: "picCard picCard short short short""picCard picCard short short short""Description Description Description Description Description""Description Description Description Description Description";
+    }
+    
+    #authorInformation>section:nth-of-type(2)>p:nth-of-type(2)>a {
+        color: #140D0F;
+    }
+    
+    #authorInformation>section:nth-of-type(2)>p:nth-of-type(2):hover {
+        scale: 1.1;
     }
     
     #authorCarousel>div>div>img {
