@@ -531,12 +531,15 @@ https://www.phpied.com/delay-loading-your-print-css/
         padding-bottom: 3%;
     }
     
+    #nav-tab {
+        column-gap: .5vw;
+        row-gap: 1vh;
+    }
+    
     #nav-tab>button {
         font-family: 'Henny Penny', cursive;
         letter-spacing: 3px;
         border: 0;
-        column-gap: 5vw;
-        row-gap: 5vh;
     }
     
     .tab-content {
@@ -805,6 +808,13 @@ https://www.phpied.com/delay-loading-your-print-css/
         border-radius: 10px 0px 0px 10px;
     }
     
+    #tabContentExcerpt>div>p {
+        text-indent: 25pt;
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 5vw;
+    }
+    
     #tabButtonsExcerpt {
         margin-top: 2.5%;
         gap: 1vh;
@@ -902,9 +912,6 @@ https://www.phpied.com/delay-loading-your-print-css/
         #about>aside>section>a>img {
             max-width: 90px;
         }
-        #about>article:nth-child(2)>aside {
-            display: none;
-        }
         #about>aside {
             display: flex;
             flex-wrap: wrap;
@@ -999,7 +1006,7 @@ https://www.phpied.com/delay-loading-your-print-css/
         }
     }
     
-    @media (max-width: 500px) {
+    @media (max-width: 530px) {
         #tabButtonsExcerpt {
             font-size: 6pt;
         }
@@ -1011,7 +1018,7 @@ https://www.phpied.com/delay-loading-your-print-css/
         }
     }
     
-    @media (max-width: 991px) and (min-width: 480px) {
+    @media (max-width: 991px) and (min-width: 535px) {
         #about>aside {
             display: none;
         }
