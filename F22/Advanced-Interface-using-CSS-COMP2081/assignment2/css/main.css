@@ -932,7 +932,7 @@ div>h5~ul {
         border-bottom: #333 solid 1px;
     }
     #authorInformation {
-        grid-template-areas: "picCard picCard picCard picCard picCard""short short short short short""Description Description Description Description Description""Description Description Description Description Description";
+        grid-template-areas: ". picCard picCard picCard ."". short short short .""Description Description Description Description Description""Description Description Description Description Description";
     }
     #authorInformation>section:first-of-type,
     #authorInformation>section:nth-child(2) {
@@ -948,6 +948,20 @@ div>h5~ul {
     #about>article:nth-child(2)>aside {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    #authorCarousel {
+        width: 65%;
+        margin-left: 17.5%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+    #authorCarousel {
+        width: 80%;
+        margin-left: 10%;
     }
 }
 
