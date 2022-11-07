@@ -494,6 +494,8 @@ main>nav {
     grid-area: BookInformation;
     padding-bottom: 3%;
     justify-content: center;
+    width: 75vw;
+    margin-left: 12.5vw;
 }
 
 #bookInfo>nav {
@@ -531,6 +533,7 @@ main>nav>ul>li {
 
 #bookInfo .nav-link:hover {
     color: #c63022;
+    scale: 1.2;
 }
 
 #bookInfo .nav-link.active {
@@ -641,6 +644,7 @@ main>nav>ul>li {
     border-radius: 15% / 25%;
     max-width: 125px;
     min-width: 80px;
+    padding: 5px;
 }
 
 #about>aside>section>a>img:hover,
@@ -902,6 +906,10 @@ div>h5~ul {
 }
 
 @media (max-width: 991px) {
+    #bookInfo {
+        width: 95vw;
+        margin-left: 2.5vw;
+    }
     #about>article:nth-child(2)>aside>section>a>img {
         transform: scale(1.2);
     }
