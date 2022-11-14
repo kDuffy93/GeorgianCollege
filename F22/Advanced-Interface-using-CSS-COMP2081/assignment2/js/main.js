@@ -2,7 +2,9 @@ const reviewsContainer = document.getElementById("output");
 let pageNumber = 2;
 let reviewNumber = 0;
 let excerptPageNumber = 0;
-
+let loadReviews = true;
+let loadingDots = document.getElementById("loadingSpinner");
+let loadingDotsTurn = 0;
 let mediaReactions = {
     0: {
         reviewer: "Vanity Fair",
@@ -318,40 +320,10 @@ let excerpt = {
 const options = {
     method: "GET",
     headers: {
-        "X-RapidAPI-Key": "14fc04b22fmsh316f7bb4d82555dp166249jsn7a012b0bd69e",
+        "X-RapidAPI-Key": "d13176e1c0mshb397bc271663d7dp10c581jsne0c03e7be2ec",
         "X-RapidAPI-Host": "amazon23.p.rapidapi.com",
     },
 };
-
-let fetch1 = async() => {
-    fetch(
-            `
-        https: //amazon23.p.rapidapi.com/reviews?asin=1668002175&sort_by=helpful&page=${pageNumber}&country=US`,
-            options
-        )
-        .then((response) => response.json())
-        .then((response) => {
-            console.log(response);
-            response.result.forEach((review) => {
-                console.log(review);
-                buildReview(
-                    review.name,
-                    review.review_data,
-                    review.title,
-                    review.review
-                );
-            });
-            pageNumber += 1;
-        })
-        .then(() => {
-            let loadMoreLink = document.getElementById("loadMoreLink");
-            console.log(loadMoreLink);
-            loadMoreLink.remove();
-            buildLoadMoreLink();
-        })
-        .catch((err) => fetch1);
-};
-
 const options1 = {
     method: "GET",
     headers: {
@@ -359,15 +331,109 @@ const options1 = {
         "X-RapidAPI-Host": "amazon-product-scraper5.p.rapidapi.com",
     },
 };
+const options2 = {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': 'd13176e1c0mshb397bc271663d7dp10c581jsne0c03e7be2ec',
+        'X-RapidAPI-Host': 'ar7-amazon-scraper-api.p.rapidapi.com'
+    }
+};
+
+let backupFetch = async() => {
+    console.log("in backup fetch");
+    toggleLoadingSpinner();
+
+
+
+    fetch('https://ar7-amazon-scraper-api.p.rapidapi.com/products/1668002175/reviews?api_key=5e646e0590730318444b43c5c6dc5c33', options2)
+        .then((response) => response.json())
+        .then((response) => {
+            response.reviews.forEach((review) => {
+                console.log(review);
+                buildAcordionItem(review, "review3");
+            });
+            pageNumber += 1;
+        })
+        .then(() => {
+
+            buildLoadMoreLink();
+        })
+        .catch((err) => backupFetch);
+};
+
+
+
+let fetch1 = async() => {
+    console.log('in fetch 1');
+    toggleLoadingSpinner();
+
+
+
+
+    fetch(`https://amazon23.p.rapidapi.com/reviews?asin=1668002175&sort_by=helpful&page=${pageNumber}&country=US`,
+            options
+        )
+        .then((response) => response.json())
+        .then((response) => {
+            console.log(response);
+            response.result.forEach((review) => {
+                console.log(review);
+                buildAcordionItem(review, "review2");
+
+
+            });
+            pageNumber += 1;
+        })
+        .then(() => {
+            try {
+                let loadMoreLink = document.getElementById("loadMoreLink");
+                console.log(loadMoreLink);
+                loadMoreLink.remove();
+            } catch {}
+            loading = false;
+            buildLoadMoreLink();
+
+        })
+        .catch((err) => console.log('failed fetch'));
+};
+
+
+let toggleLoadingSpinner = () => {
+
+
+    try {
+        let loadMoreLink = document.getElementById("loadMoreLink");
+        loadMoreLink.remove();
+    } catch {}
+
+    let spinner = document.createElement('img');
+    spinner.id = 'loadingSpinner'
+    spinner.src = './img/loadingDots.png';
+    spinner.classList.add('loading');
+    reviewsContainer.appendChild(spinner);
+
+};
+
+
+
+let spinLoadingDots = () => {
+    loadingDotsTurn += 0.0625;
+    loadingDots.style.rotateZ = `${loadingDotsTurn}turn`;
+}
 
 let buildLoadMoreLink = () => {
+    try {
+        let spinner = document.getElementById("loadingSpinner");
+        spinner.remove();
+    } catch {}
+
     let tempLoadMoreLink = document.createElement("a");
     tempLoadMoreLink.textContent = "Load More Reviews";
     tempLoadMoreLink.href = "#";
     tempLoadMoreLink.id = "loadMoreLink";
     tempLoadMoreLink.addEventListener("click", (e) => {
         e.preventDefault();
-        fetch2();
+        fetch1();
     });
     reviewsContainer.appendChild(tempLoadMoreLink);
 };
@@ -616,10 +682,22 @@ let buildAcordionItem = (input, type) => {
     let output = document.createElement("div");
 
     let mainAcordionEl;
-    if (type == "review") {
-        output.appendChild(
-            buildReview(input.username, input.date, input.review, output)
-        );
+    if (type.includes("review")) {
+        if (type === "review") {
+            output.appendChild(
+                buildReview(input.username, input.date, input.review, output)
+            );
+        }
+        if (type.includes("2")) {
+            output.appendChild(
+                buildReview(input.name, input.review_data, input.review, output)
+            );
+        }
+        if (type.includes("3")) {
+            output.appendChild(
+                buildReview(input.username, input.date, input.review, output)
+            );
+        }
         mainAcordionEl = innerAcordionEl;
     }
 
@@ -698,6 +776,8 @@ let buildReview = (
 };
 
 let fetch2 = async() => {
+    toggleLoadingSpinner();
+
     fetch(
             "https://amazon-product-scraper5.p.rapidapi.com/products/1668002175&page=3/reviews?api_key=d1a8234e072f8b7503c43956aa11e281",
             options1
@@ -711,18 +791,23 @@ let fetch2 = async() => {
                 console.log("doneBuilding");
             });
         })
-        .then(() => {
-            try {
-                let loadMoreLink = document.getElementById("loadMoreLink");
-                console.log(loadMoreLink);
-                loadMoreLink.remove();
-            } catch {}
 
-            buildLoadMoreLink();
-        })
-        .catch((err) => fetch2);
+    .catch((err) => backupFetch());
+    buildLoadMoreLink();
 };
-fetch2();
+
+let reviewsAcordion = document.getElementById("reviews").children[0];
+console.log(reviewsAcordion);
+reviewsAcordion.addEventListener("click", () => {
+    if (loadReviews) {
+        fetch2();
+        //backupFetch();
+        loadReviews = false;
+    }
+
+});
+
+
 
 for (const about in aboutAuthors) {
     if (Object.hasOwnProperty.call(aboutAuthors, about)) {
@@ -730,6 +815,8 @@ for (const about in aboutAuthors) {
         buildAcordionItem(element, "aboutAuthor");
     }
 }
+
+
 let navToHide = document.querySelector("main>nav>ul");
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

@@ -310,7 +310,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     .nav-link {
         transition: 0.1s;
-        color: #a42117;
+        color: #ff3f0f;
         font-family: 'Henny Penny', cursive;
         letter-spacing: 1px;
     }
@@ -318,7 +318,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     .nav-link:hover {
         text-decoration: underline;
         scale: 1.05;
-        color: #c63022;
+        color: #f23000;
     }
     
     main>section>section {
@@ -354,7 +354,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     div.carousel-item:nth-child(1)>div:nth-child(2)>h5:nth-child(1) {
-        color: #a42117;
+        color: #ff3f0f;
         margin-top: -64.5vh;
     }
     
@@ -406,7 +406,8 @@ https://www.phpied.com/delay-loading-your-print-css/
     #about>article>figure>div,
     .inset-Readable,
     #mediaReactions>article>p,
-    #authorAcordion>section>section>section>div {
+    #authorAcordion>section>section>section>div,
+    #innerAcordion>section>section>section>div>section>section:nth-of-type(2) {
         width: 80%;
         background-color: rgba(242, 238, 202, 0.733);
         margin: 2vh 0 2vh 10%;
@@ -414,6 +415,10 @@ https://www.phpied.com/delay-loading-your-print-css/
         padding-left: 3vmin;
         padding-right: 3vmin;
         border-radius: 5%;
+    }
+    
+    #innerAcordion>section>section>section>div>section>section:nth-of-type(2) {
+        margin: 0;
     }
     
     #authorInformation>section:nth-of-type(2)>p:nth-of-type(2)>a,
@@ -440,12 +445,26 @@ https://www.phpied.com/delay-loading-your-print-css/
         padding: 20px;
     }
     
-    #mediaReactions>article>div>h5 {
+    #mediaReactions>article>div>h5,
+    .accordion-body>div>section>section:first-of-type {
         font-family: 'Akaya Telivigala', cursive;
         font-weight: bold;
         background-color: rgba(242, 238, 202, 0.404);
         border-radius: 50px;
         padding: 25px;
+    }
+    
+    #loadMoreLink {
+        margin: 1vh 0;
+        background-color: rgba(242, 238, 202, 0.6);
+        border-radius: 50%;
+        padding: 20px;
+        min-width: 185px;
+    }
+    
+    #loadMoreLink:hover {
+        scale: 1.1;
+        background-color: rgba(242, 238, 202, 0.733)
     }
     
     .nav-link {}
@@ -468,7 +487,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     .titleSpan {
-        display: inline-block;
+        display: inline;
         text-decoration: underline;
         width: fit-content;
         text-decoration-thickness: 1px;
@@ -561,12 +580,12 @@ https://www.phpied.com/delay-loading-your-print-css/
     #bookInfo .nav-link {
         border-radius: 10% / 50%;
         background-color: rgba(242, 238, 202, 0.6);
-        color: #a42117;
+        color: #ff3f0f;
         font-weight: bold;
     }
     
     #bookInfo .nav-link:hover {
-        color: #c63022;
+        color: #f23000;
         scale: 1.2;
     }
     
@@ -589,20 +608,29 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     .accordion-button:not(.collapsed) {
-        color: #a42117;
+        color: #f23000;
     }
     
     .accordion-body>div>section {
         display: flex;
-        gap: 5%;
+        gap: 2.5%;
     }
     
     .accordion-body>div>section>section:first-of-type {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-evenly;
+        align-items: center;
         min-width: 125px;
         margin-bottom: 5%;
+        font-weight: bold;
+    }
+    
+    .accordion-body>div>section>section:first-of-type>:not(p:last-of-type)::after {
+        display: flex;
+        content: '';
+        border-bottom: #140D0F solid 1px;
+        margin-top: 50%;
     }
     
     .mainContent>section:nth-of-type(3) {
@@ -619,19 +647,27 @@ https://www.phpied.com/delay-loading-your-print-css/
         padding: var(--bs-accordion-body-padding-y) 0;
     }
     
+    #output {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.5vh;
+        align-items: center;
+    }
+    
     #reviewsButton,
     #reviewsButton>button,
     #authorAcordion>section>h2,
-    #authorAcordion>section>h2>button {
-        background-color: rgba(200, 200, 200, 0.3);
+    #authorAcordion>section>h2>button,
+    #innerAcordion>section>h2>button {
+        background-color: rgba(242, 238, 202, 0.3);
     }
     
-    {
-        background-color: rgba(242, 238, 202, 0.6);
-    }
+    {}
     
     #reviewsInfo,
-    #authorAcordion>.accordion-item {
+    #authorAcordion>.accordion-item,
+    #innerAcordion>.accordion-item {
         background-color: #01448830;
     }
     
@@ -952,6 +988,13 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     @media (max-width: 991px) {
+        #innerAcordion>section>section>section>div>section>section:nth-of-type(2) {
+            width: 100%;
+            margin: 0;
+        }
+        .accordion-body>div>section>section:first-of-type>:not(p:last-of-type)::after {
+            display: none;
+        }
         #tabButtonsExcerpt {
             left: 10%;
         }
@@ -1039,6 +1082,22 @@ https://www.phpied.com/delay-loading-your-print-css/
         #authorCarousel {
             width: 80%;
             margin-left: 10%;
+        }
+    }
+    
+    .loading {
+        animation: spin 1s infinite ease-in-out;
+        width: 3vw;
+        height: 3vw;
+        background-color: radial-gradient(transparent, #222 75%, transparent 85%);
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotateZ(0turn)
+        }
+        to {
+            transform: rotateZ(1turn)
         }
     }
     /* I took this CSS from: https://blog.avada.io/css/book-effects#book-html-css-only  > corner fold*/
