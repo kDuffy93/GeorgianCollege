@@ -791,8 +791,7 @@ let fetch2 = async() => {
                 console.log("doneBuilding");
             });
         })
-
-    .catch((err) => backupFetch());
+        .catch((err) => backupFetch());
     buildLoadMoreLink();
 };
 
