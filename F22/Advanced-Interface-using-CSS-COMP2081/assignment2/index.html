@@ -28,28 +28,16 @@
 
 
     <link rel="stylesheet" href="css/main.css">
-
-
-
-
     <meta name="theme-color" content="#fafafa">
-
-
-
 </head>
 
 <body>
-
+    <!--page background image-->
     <span></span>
-
+    <!-- Header Content -->
     <header>
-
-
         <nav class="navbar navbar-expand-md navbar-light bg-transparent">
             <a class="navbar-brand" href="#"><img src="./img/logo.svg" /></a>
-
-
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#globalNav" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -76,8 +64,9 @@
 
         </nav>
     </header>
+    <!-- Main Content-->
     <main>
-        <!-- turn into bootstrap tabs-->
+        <!--Secondary floating nav -->
         <nav class="navbar navbar-expand-sm navbar-light .bg-transparent sticky-top">
             <ul class="navbar-nav ms-3 me-2">
                 <li class="nav-item  me-md-3 ">
@@ -104,8 +93,11 @@
             </ul>
             <button class="ms-auto me-md-2 btn btn-primary btn-lg btn-outline-primary text-primary my-2 my-sm-0  fw-bold bg-light bg-opacity-50 buyNowButton" type="button">Buy Now</button>
         </nav>
+        <!-- Main Page Content, Broken down into sections-->
         <section class="mainContent">
+            <!-- About the book section-->
             <section id="about">
+                <!-- Left side of about section-->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -143,21 +135,25 @@
 
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-
+                <!-- Right side of about section-->
                 <article>
+                    <!-- title-->
                     <div>
-                        <h2>FAIRY <span class="titleSpan">TALE</span></h2>
+                        <h2>FAIRY
+                            <p class="titleSpan">TALE</p>
+                        </h2>
                         <h4>By: <a href="https://stephenking.com">Stephen King</a></h4>
                         <h4>MSRP: $32.50</h4>
                     </div>
+                    <!--Buy Links-->
                     <aside class="buyLinks">
                         <select id="topSelect">
                          <option value="hardCover">Hard Cover</option>
@@ -179,6 +175,7 @@
                             <a href="http://www.kobobooks.com/search/search.html?q=9781668002186"><img src="./img/svg/RakutenKobologo.svg" alt=""></a>
                         </section>
                     </aside>
+                    <!-- about Paragraph-->
                     <figure class="container">
                         <figcaption>About the book</figcaption>
                         <div>
@@ -192,7 +189,7 @@
                         </div>
                     </figure>
                 </article>
-
+                <!-- Hidden About the book figure for smaller screen sizes-->
                 <figure class="container">
                     <figcaption>About the book</figcaption>
                     <div>
@@ -205,7 +202,7 @@
                             (of what I didn’t know, but I eventually found out). I saw a huge, sprawling palace with glass towers so high their tips pierced the clouds. Those images released the story I wanted to tell.”</p>
                 </figure>
                 </div>
-
+                <!-- Hidden Buy Links aside for smaller screen sizes-->
                 <aside class="buyLinks">
                     <select id="bottomSelect">
                        
@@ -229,8 +226,10 @@
                     </section>
                 </aside>
             </section>
+            <!--book Information section-->
             <section id="bookInfo" class="row">
                 <section>
+                    <!-- BS Pills nav for the bookInfo Section-->
                     <nav>
                         <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
 
@@ -244,9 +243,9 @@
                             <button class="nav-link" id="authorButton" data-bs-toggle="pill" data-bs-target="#authorInformation" type="button" role="tab" aria-controls="authorInformation" aria-selected="false">Author Information</button>
                         </div>
                     </nav>
-
+                    <!-- Pills tab content container-->
                     <div class="tab-content" id="tabContent">
-
+                        <!--Synopsis-->
                         <div class="tab-pane fade active show" id="synopsis" role="tabpanel" aria-labelledby="aboutBookButton">
                             <div class="inset-Readable">
                                 <p>Charlie Reade looks like a regular high school kid, great at baseball and football, a decent student. But he carries a heavy load. His mom was killed in a hit-and-run accident when he was seven, and grief drove his dad
@@ -256,10 +255,11 @@
                                     long life, is that inside the shed is a portal to another world.</p>
                             </div>
                         </div>
+                        <!--Media Reactions-->
                         <div class="tab-pane fade" id="mediaReactions" role="tabpanel" aria-labelledby="mediaReactionsButton">
 
                         </div>
-
+                        <!--Excerpt-->
                         <div class="tab-pane fade" id="excerpt" role="tabpanel" aria-labelledby="excerptButton">
                             <div class="d-flex align-items-start">
                                 <div class="nav flex-column nav-pills me-3" id="tabButtonsExcerpt" role="tablist" aria-orientation="vertical">
@@ -274,9 +274,8 @@
 
                                 </div>
                             </div>
-
-
                         </div>
+                        <!--Product Details-->
                         <div class="tab-pane fade" id="productDetails" role="tabpanel" aria-labelledby="productDetailsButton">
                             <div>
                                 <div class="inset-Readable">
@@ -300,17 +299,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Author Information-->
                         <div class="tab-pane fade" id="authorInformation" role="tabpanel" aria-labelledby="authorButton">
                             <section>
                                 <h3>Stephen King</h3>
-                                <!-- Replace With carousel-->
-
-
-
-
-
-
-
                                 <div id="authorCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -336,12 +328,6 @@
                                     <span class="visually-hidden">Next</span>
                                   </button>
                                 </div>
-
-
-
-
-
-
                             </section>
                             <section>
                                 <p><span><b>Born in:</b> Portland, Maine, USA</span></p>
@@ -377,9 +363,9 @@
 
                     </div>
                 </section>
-
-
             </section>
+
+            <!-- Reviews section-->
             <section id="reviews">
                 <div class="accordion" id="bottomSection">
                     <section id="reviewsInfo" class="accordion-item">
@@ -400,10 +386,10 @@
             </section>
 
         </section>
+        <!--mainContent-->
     </main>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

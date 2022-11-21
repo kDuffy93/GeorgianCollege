@@ -234,23 +234,18 @@ https://www.phpied.com/delay-loading-your-print-css/
             page-break-after: avoid;
         }
     }
+    /******************************START OF MY STYLES***********************************/
+    /* import font face */
     
     @font-face {
         font-family: 'Hamlet';
         src: url("hamlet-tertia18.otf") format("opentype");
     }
     
-    body {
-        height: 100%;
-    }
-    
     html {
         min-width: 320px;
         height: 100%;
         overflow: auto;
-    }
-    
-    html {
         font-family: 'Josefin Sans', cursive;
     }
     
@@ -261,11 +256,12 @@ https://www.phpied.com/delay-loading-your-print-css/
         padding: 0;
         margin: 0;
     }
+    /* page background image */
     
     body>span:first-of-type {
+        height: 100%;
         min-width: 100vw;
         min-height: 100vh;
-        background-color: #140D0F;
         background-image: url('../img/bg.webp');
         background-size: cover;
         background-position: center;
@@ -275,18 +271,11 @@ https://www.phpied.com/delay-loading-your-print-css/
         top: 0;
         left: 0;
     }
+    /* header section */
     
     header {
         height: 7.5vh;
         min-height: 60px;
-    }
-    
-    .buyNowButton {
-        font-family: 'Hamlet', cursive;
-    }
-    
-    .buyNowButton:hover {
-        scale: 1.05;
     }
     
     header>nav>a>img {
@@ -307,6 +296,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     .collapsing {
         transition: none !important;
     }
+    /* general nav styling */
     
     .nav-link {
         transition: 0.1s;
@@ -321,15 +311,81 @@ https://www.phpied.com/delay-loading-your-print-css/
         color: #f23000;
     }
     
+    ul>li>a {
+        font-weight: bold !important;
+    }
+    
+    figcaption {
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .break {
+        display: none;
+    }
+    /* main > nav */
+    
+    main>nav {
+        justify-content: center !important;
+        pointer-events: none;
+    }
+    
+    main>nav>ul {
+        pointer-events: auto;
+    }
+    
+    main>nav>ul>li {
+        background-color: #01448830;
+        text-align: center;
+        border-radius: 10% / 25%;
+    }
+    
+    main>nav>button {
+        pointer-events: auto;
+    }
+    /* main content section */
+    /* general styles */
+    
     main>section>section {
         margin-bottom: 5vh;
     }
     
-    main>section>section:nth-of-type(2) {}
-    
-    ul>li>a {
-        font-weight: bold !important;
+    .mainContent {
+        display: grid;
+        grid-template-columns: repeat(1fr, 3);
+        grid-template-areas: "introContent introContent introContent""BookInformation BookInformation BookInformation""reviews reviews reviews";
     }
+    
+    .carousel-inner {
+        width: 96% !important;
+    }
+    
+    #about>figure>div,
+    #about>article>figure>div,
+    .inset-Readable,
+    #mediaReactions>article>p,
+    #authorAcordion>section>section>section>div,
+    #innerAcordion>section>section>section>div>section>section:nth-of-type(2) {
+        width: 80%;
+        background-color: rgba(242, 238, 202, 0.733);
+        margin: 2vh 0 2vh 10%;
+        padding: 2vmin;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+        border-radius: 5%;
+    }
+    /*----mainContent > about Section----*/
+    
+    #about {
+        grid-area: introContent;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+    }
+    /* about section carousel styles(left half)   */
     
     .carousel-item {
         height: inherit;
@@ -357,22 +413,7 @@ https://www.phpied.com/delay-loading-your-print-css/
         color: #ff3f0f;
         margin-top: -64.5vh;
     }
-    
-    .mainContent {
-        display: grid;
-        grid-template-columns: repeat(1fr, 3);
-        grid-template-areas: "introContent introContent introContent""BookInformation BookInformation BookInformation""reviews reviews reviews";
-    }
-    
-    #about {
-        grid-area: introContent;
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 50%;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100vw;
-    }
+    /* about section article styles(right half)   */
     
     #about>article {
         display: flex;
@@ -402,72 +443,20 @@ https://www.phpied.com/delay-loading-your-print-css/
         text-align: center;
     }
     
-    #about>figure>div,
-    #about>article>figure>div,
-    .inset-Readable,
-    #mediaReactions>article>p,
-    #authorAcordion>section>section>section>div,
-    #innerAcordion>section>section>section>div>section>section:nth-of-type(2) {
-        width: 80%;
-        background-color: rgba(242, 238, 202, 0.733);
-        margin: 2vh 0 2vh 10%;
-        padding: 2vmin;
-        padding-left: 3vmin;
-        padding-right: 3vmin;
-        border-radius: 5%;
-    }
-    
-    #innerAcordion>section>section>section>div>section>section:nth-of-type(2) {
-        margin: 0;
-    }
-    
-    #authorInformation>section:nth-of-type(2)>p:nth-of-type(2)>a,
-    #authorInformation>section:nth-of-type(2)>p:nth-of-type(1)>span {
-        background-color: rgba(242, 238, 202, 0.733);
-        padding: 2vmin;
-        width: fit-content;
-        border-radius: 10px;
-    }
-    
-    #authorInformation>section:nth-of-type(2)>p:nth-of-type(1) {
-        margin-top: 2vh;
-    }
-    
-    #authorAcordion>section>section>section>div {
-        width: 90%;
-        margin: 2vh 0 2vh 5%;
-    }
-    
-    #mediaReactions>article>p {
-        margin-left: 0;
-        border-radius: 60px;
-        margin-right: 2vw;
-        padding: 20px;
-    }
-    
-    #mediaReactions>article>div>h5,
-    .accordion-body>div>section>section:first-of-type {
-        font-family: 'Akaya Telivigala', cursive;
-        font-weight: bold;
-        background-color: rgba(242, 238, 202, 0.404);
+    #about>article>div {
+        height: fit-content;
+        padding: 0 25px;
         border-radius: 50px;
-        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5vh;
+        background-color: rgba(242, 238, 202, 0.2);
+        width: fit-content;
     }
     
-    #loadMoreLink {
-        margin: 1vh 0;
-        background-color: rgba(242, 238, 202, 0.6);
-        border-radius: 50%;
-        padding: 20px;
-        min-width: 185px;
+    #about>figure {
+        display: none;
     }
-    
-    #loadMoreLink:hover {
-        scale: 1.1;
-        background-color: rgba(242, 238, 202, 0.733)
-    }
-    
-    .nav-link {}
     
     #about>article>div :is(h2,
     h4) {
@@ -487,9 +476,8 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     .titleSpan {
-        display: inline;
+        display: inline-block;
         text-decoration: underline;
-        width: fit-content;
         text-decoration-thickness: 1px;
     }
     
@@ -499,181 +487,15 @@ https://www.phpied.com/delay-loading-your-print-css/
         vertical-align: sub;
         font-weight: 600;
     }
+    /*about > buy links styling*/
     
-    #about>article>div {
-        height: fit-content;
-        padding: 0 25px;
-        border-radius: 50px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 2.5vh;
-        background-color: rgba(242, 238, 202, 0.2);
-        width: fit-content;
+    .buyNowButton {
+        /*This is using @font-Face imported above*/
+        font-family: 'Hamlet', cursive;
     }
     
-    #about>figure {
-        display: none;
-    }
-    
-    figcaption {
-        text-decoration: underline;
-        text-align: center;
-    }
-    
-    .break {
-        display: none;
-    }
-    
-    main>nav {
-        justify-content: center !important;
-        pointer-events: none;
-    }
-    
-    main>nav>ul {
-        pointer-events: auto;
-    }
-    
-    main>nav>button {
-        pointer-events: auto;
-    }
-    
-    #bookInfo {
-        min-height: 50vh;
-        grid-area: BookInformation;
-        padding-bottom: 3%;
-        justify-content: center;
-        width: 75vw;
-        margin-left: 12.5vw;
-    }
-    
-    #bookInfo>nav {
-        padding-bottom: 3%;
-    }
-    
-    #nav-tab {
-        column-gap: .5vw;
-        row-gap: 1vh;
-    }
-    
-    #nav-tab>button {
-        font-family: 'Henny Penny', cursive;
-        letter-spacing: 3px;
-        border: 0;
-    }
-    
-    .tab-content {
-        margin-top: 2vh;
-    }
-    
-    main>nav>ul>li {
-        background-color: #01448830;
-        text-align: center;
-        border-radius: 10% / 25%;
-    }
-    
-    #bookInfo {
-        display: flex;
-        flex-basis: 50%;
-        justify-content: center;
-    }
-    
-    #bookInfo .nav-link {
-        border-radius: 10% / 50%;
-        background-color: rgba(242, 238, 202, 0.6);
-        color: #ff3f0f;
-        font-weight: bold;
-    }
-    
-    #bookInfo .nav-link:hover {
-        color: #f23000;
-        scale: 1.2;
-    }
-    
-    #bookInfo .nav-link.active {
-        background-color: #ffffffa8 !important;
-    }
-    
-    .accordion-button {
-        font-weight: bold;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    .accordion-button>div {}
-    
-    .accordion-button:before {
-        content: '';
-        background-color: transparent;
-        margin-right: auto;
-    }
-    
-    .accordion-button:not(.collapsed) {
-        color: #f23000;
-    }
-    
-    .accordion-body>div>section {
-        display: flex;
-        gap: 2.5%;
-    }
-    
-    .accordion-body>div>section>section:first-of-type {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        min-width: 125px;
-        margin-bottom: 5%;
-        font-weight: bold;
-    }
-    
-    .accordion-body>div>section>section:first-of-type>:not(p:last-of-type)::after {
-        display: flex;
-        content: '';
-        border-bottom: #140D0F solid 1px;
-        margin-top: 50%;
-    }
-    
-    .mainContent>section:nth-of-type(3) {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
-    
-    #bottomSection {
-        width: 85vw;
-    }
-    
-    #reviews>div {
-        padding: var(--bs-accordion-body-padding-y) 0;
-    }
-    
-    #output {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 2.5vh;
-        align-items: center;
-    }
-    
-    #reviewsButton,
-    #reviewsButton>button,
-    #authorAcordion>section>h2,
-    #authorAcordion>section>h2>button,
-    #innerAcordion>section>h2>button {
-        background-color: rgba(242, 238, 202, 0.3);
-    }
-    
-    {}
-    
-    #reviewsInfo,
-    #authorAcordion>.accordion-item,
-    #innerAcordion>.accordion-item {
-        background-color: #01448830;
-    }
-    
-    #productDetails.show {
-        display: flex;
-        justify-content: space-evenly;
+    .buyNowButton:hover {
+        scale: 1.05;
     }
     
     .buyLinks>section {
@@ -732,6 +554,168 @@ https://www.phpied.com/delay-loading-your-print-css/
         display: flex;
         flex-direction: column;
         width: fit-content;
+    }
+    
+    #topSelect,
+    #bottomSelect {
+        font-family: 'Josefin San', cursive;
+        align-self: center;
+        width: fit-content;
+        background-color: rgba(200, 200, 200, 0.75);
+        margin-bottom: 5vh;
+    }
+    
+    #topSelect>option,
+    #bottomSelect>option {
+        font-family: 'Josefin San', cursive;
+        background-color: rgba(200, 200, 200, 0.75);
+    }
+    
+    #topSelect>option:hover,
+    #bottomSelect>option:hover {
+        background-color: rgba(200, 200, 200, 1);
+    }
+    /*----MainContent > bookInfo General Styles-----*/
+    
+    #bookInfo {
+        min-height: 50vh;
+        grid-area: BookInformation;
+        padding-bottom: 3%;
+        justify-content: center;
+        width: 75vw;
+        margin-left: 12.5vw;
+        display: flex;
+        flex-basis: 50%;
+    }
+    
+    #bookInfo>nav {
+        padding-bottom: 3%;
+    }
+    
+    #nav-tab {
+        column-gap: .5vw;
+        row-gap: 1vh;
+    }
+    
+    #nav-tab>button {
+        font-family: 'Henny Penny', cursive;
+        letter-spacing: 3px;
+        border: 0;
+    }
+    
+    .tab-content {
+        margin-top: 2vh;
+    }
+    
+    #bookInfo .nav-link {
+        border-radius: 10% / 50%;
+        background-color: rgba(242, 238, 202, 0.6);
+        color: #ff3f0f;
+        font-weight: bold;
+    }
+    
+    #bookInfo .nav-link:hover {
+        color: #f23000;
+        scale: 1.2;
+    }
+    
+    #bookInfo .nav-link.active {
+        background-color: #ffffffa8 !important;
+    }
+    /*--MainContent > bookInfo > synopsis Section*/
+    /* its covered in general */
+    /* MainContent > bookInfo > media Reactions Section*/
+    
+    #mediaReactions>article>p {
+        margin-left: 0;
+        border-radius: 60px;
+        margin-right: 2vw;
+        padding: 20px;
+    }
+    
+    #mediaReactions>article>div>h5,
+    .accordion-body>div>section>section:first-of-type {
+        font-family: 'Akaya Telivigala', cursive;
+        font-weight: bold;
+        background-color: rgba(242, 238, 202, 0.404);
+        border-radius: 50px;
+        padding: 25px;
+    }
+    
+    #mediaReactions>article {
+        display: flex;
+        gap: 3%;
+        border-bottom: #333 solid 1px;
+        margin-bottom: 2vh;
+        align-items: center;
+    }
+    
+    #mediaReactions>article>div {
+        max-width: 40%;
+        min-width: 30%;
+        height: 100%;
+        border-right: 1px solid black;
+        padding: 3vmin;
+    }
+    /* MainContent > BookInfo > Excerpt Section*/
+    
+    #excerpt>div {
+        justify-content: space-between;
+    }
+    
+    #tabContentExcerpt {
+        min-height: 65vh;
+        margin-right: 3.25%;
+        padding: 5% 10% 5% 3%;
+        align-self: center;
+        width: 75%;
+        background-color: rgba(242, 238, 202, 0.733);
+        position: relative;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    #tabContentExcerpt>div>p {
+        text-indent: 25pt;
+        text-align: left;
+        margin-bottom: 0;
+        margin-left: 5vw;
+    }
+    
+    #tabButtonsExcerpt {
+        margin-top: 2.5%;
+        gap: 1vh;
+        position: sticky;
+        top: 5%;
+        left: 17.5%;
+        z-index: 5;
+    }
+    
+    #tabButtonsExcerpt>button {
+        letter-spacing: 1px;
+    }
+    /* MainContent > BookInfo > Product Details Section*/
+    
+    #productDetails.show {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* MainContent > BookInfo > Author Information Section*/
+    
+    #authorInformation>section:nth-of-type(2)>p:nth-of-type(2)>a,
+    #authorInformation>section:nth-of-type(2)>p:nth-of-type(1)>span {
+        background-color: rgba(242, 238, 202, 0.733);
+        padding: 2vmin;
+        width: fit-content;
+        border-radius: 10px;
+    }
+    
+    #authorInformation>section:nth-of-type(2)>p:nth-of-type(1) {
+        margin-top: 2vh;
+    }
+    
+    #authorAcordion>section>section>section>div {
+        width: 90%;
+        margin: 2vh 0 2vh 5%;
     }
     
     #authorInformation {
@@ -808,85 +792,99 @@ https://www.phpied.com/delay-loading-your-print-css/
         display: flex;
         flex-direction: column;
     }
+    /*-------------------Reviews Section-----------------*/
     
-    .sticky-top {
-        padding-bottom: 0;
+    #innerAcordion>section>section>section>div>section>section:nth-of-type(2) {
+        margin: 0;
     }
     
-    #mediaReactions>article {
+    #loadMoreLink {
+        margin: 1vh 0;
+        background-color: rgba(242, 238, 202, 0.6);
+        border-radius: 50%;
+        padding: 20px;
+        min-width: 185px;
+    }
+    
+    #loadMoreLink:hover {
+        scale: 1.1;
+        background-color: rgba(242, 238, 202, 0.733)
+    }
+    
+    .accordion-button {
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .accordion-button:before {
+        content: '';
+        background-color: transparent;
+        margin-right: auto;
+    }
+    
+    .accordion-button:not(.collapsed) {
+        color: #f23000;
+    }
+    
+    .accordion-body>div>section {
         display: flex;
-        gap: 3%;
-        border-bottom: #333 solid 1px;
-        margin-bottom: 2vh;
+        gap: 2.5%;
+    }
+    
+    .accordion-body>div>section>section:first-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 125px;
+        margin-bottom: 5%;
+        font-weight: bold;
+    }
+    
+    .accordion-body>div>section>section:first-of-type>:not(p:last-of-type)::after {
+        display: flex;
+        content: '';
+        border-bottom: #140D0F solid 1px;
+        margin-top: 50%;
+    }
+    
+    .mainContent>section:nth-of-type(3) {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #bottomSection {
+        width: 85vw;
+    }
+    
+    #reviews>div {
+        padding: var(--bs-accordion-body-padding-y) 0;
+    }
+    
+    #output {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.5vh;
         align-items: center;
     }
     
-    #mediaReactions>article>div {
-        max-width: 40%;
-        min-width: 30%;
-        height: 100%;
-        border-right: 1px solid black;
-        padding: 3vmin;
+    #reviewsButton,
+    #reviewsButton>button,
+    #authorAcordion>section>h2,
+    #authorAcordion>section>h2>button,
+    #innerAcordion>section>h2>button {
+        background-color: rgba(242, 238, 202, 0.3);
     }
     
-    #excerpt>div {
-        justify-content: space-between;
+    #reviewsInfo,
+    #authorAcordion>.accordion-item,
+    #innerAcordion>.accordion-item {
+        background-color: #01448830;
     }
-    
-    #tabContentExcerpt {
-        min-height: 65vh;
-        margin-right: 3.25%;
-        padding: 5% 10% 5% 3%;
-        align-self: center;
-        width: 75%;
-        background-color: rgba(242, 238, 202, 0.733);
-        position: relative;
-        border-radius: 10px 0px 0px 10px;
-    }
-    
-    #tabContentExcerpt>div>p {
-        text-indent: 25pt;
-        text-align: left;
-        margin-bottom: 0;
-        margin-left: 5vw;
-    }
-    
-    #tabButtonsExcerpt {
-        margin-top: 2.5%;
-        gap: 1vh;
-        position: sticky;
-        top: 5%;
-        left: 17.5%;
-        z-index: 5;
-    }
-    
-    #tabButtonsExcerpt>button {
-        letter-spacing: 1px;
-    }
-    
-    #topSelect,
-    #bottomSelect {
-        font-family: 'Josefin San', cursive;
-        align-self: center;
-        width: fit-content;
-        background-color: rgba(200, 200, 200, 0.75);
-        margin-bottom: 5vh;
-    }
-    
-    #topSelect>option,
-    #bottomSelect>option {
-        font-family: 'Josefin San', cursive;
-        background-color: rgba(200, 200, 200, 0.75);
-    }
-    
-    #topSelect>option:hover,
-    #bottomSelect>option:hover {
-        background-color: rgba(200, 200, 200, 1);
-    }
-    
-    .carousel-inner {
-        width: 96% !important;
-    }
+    /*-----------Media Queries */
     
     @media (max-width: 768px) {
         #about>article:nth-child(2)>aside>section>a>img {
@@ -1034,15 +1032,6 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     @media (max-width: 675px) {
-        /*  #tabButtonsExcerpt {
-        flex-direction: row !important;
-        justify-content: space-evenly;
-        position: inherit;
-    }
-    #excerpt>div {
-        flex-direction: column !important;
-        align-items: center !important;
-    } */
         #tabButtonsExcerpt {
             width: 80px;
             font-size: 9px;
@@ -1085,6 +1074,19 @@ https://www.phpied.com/delay-loading-your-print-css/
         }
     }
     
+    @media (max-width:530px) and (min-width:411px) {
+        #about>article>div>h2 {
+            font-size: calc(1rem + .7vw);
+        }
+        #about>article>div :is(h2)::first-letter {
+            font-size: calc(75pt - .5vw);
+        }
+        .titleSpan::first-letter {
+            font-size: calc(65pt - .5vw);
+        }
+    }
+    /* for the loading spinner in reviews */
+    
     .loading {
         animation: spin 1s infinite ease-in-out;
         width: 3vw;
@@ -1100,7 +1102,7 @@ https://www.phpied.com/delay-loading-your-print-css/
             transform: rotateZ(1turn)
         }
     }
-    /* I took this CSS from: https://blog.avada.io/css/book-effects#book-html-css-only  > corner fold*/
+    /* I took this CSS from: https://blog.avada.io/css/book-effects#book-html-css-only  > to be used in my media Reactions > Excerpt section*/
     
     .corner-fold {
         position: absolute;
