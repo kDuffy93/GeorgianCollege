@@ -1,0 +1,77 @@
+/* Build out your custom CSS here */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content 80vh 9vh;
+    grid-template-areas: "header""main""footer"
+}
+
+header {
+    grid-area: header;
+    width: 90vw;
+    margin-left: 5vw;
+    display: grid;
+    grid-template-columns: 90% 5% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: "text img .";
+    font-size: clamp(8pt, 3.225vw, 200pt);
+}
+
+h1 {
+    background-color: #db281e;
+    margin: 0;
+    color: #fefbfb;
+    border-radius: 2px;
+    font-family: 'Zen Antique Soft', serif;
+    padding-left: .5ch;
+}
+
+header>h1 {
+    grid-area: text;
+}
+
+header>img {
+    background-color: white;
+    grid-area: img;
+    width: auto;
+    height: 50%;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    position: fixed;
+    top: 95%;
+}
+
+#secondLogo {
+    display: flex;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+#secondLogo>h2 {
+    background-color: #0065a4;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    font-size: clamp(50pt, 12vw, 200pt);
+    width: 78vw;
+    text-align: center;
+    line-height: 100%;
+    color: white;
+    min-height: 100%;
+    align-self: center;
+}
+
+#secondLogo>h2>span {
+    color: #64cdf5;
+}
+
+#secondLogo>img {
+    width: auto;
+}
