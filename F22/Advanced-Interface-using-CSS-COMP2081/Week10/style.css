@@ -1,0 +1,126 @@
+.firstLetter {
+    animation: Animation 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+.secondLetter {
+    animation: Animation 2s ease-in-out infinite;
+    animation-delay: -.16s;
+    animation-delay: .4s;
+    display: inline-block;
+}
+
+.thirdLetter {
+    animation: Animation 2s ease-in-out infinite;
+    animation-delay: -1.2s;
+    display: inline-block;
+}
+
+.fourthLetter {
+    animation: Animation 2s ease-in-out infinite;
+    animation-delay: -.8s;
+    display: inline-block;
+}
+
+.fifthLetter {
+    animation: Animation 2s ease-in-out infinite;
+    animation-delay: -.4s;
+    display: inline-block;
+}
+
+p:nth-of-type(5) {
+    animation: backgroundp 25s ease-in infinite;
+}
+
+@keyframes Animation {
+    0% {
+        color: indigo;
+        background-color: green;
+    }
+    25% {
+        color: blue;
+        background-color: yellow;
+    }
+    50% {
+        color: green;
+        background-color: red;
+    }
+    75% {
+        color: yellow;
+        background-color: indigo;
+    }
+    100% {
+        color: red;
+        background-color: blue;
+    }
+}
+
+@keyframes backgroundp {
+    0% {
+        background-color: green;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: red;
+    }
+    75% {
+        background-color: indigo;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+#rotate:hover {
+    animation: rotateP 10s ease-in-out infinite;
+}
+
+@keyframes rotateP {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    16.5% {
+        transform: rotate3d(.25, .5, .75, 180deg);
+    }
+    33% {
+        transform: rotate3d(.75, .25, .5, -180deg);
+    }
+    50% {
+        transform: rotate3d(-.25, -.5, -.75, 270deg);
+    }
+    66.5% {
+        transform: rotate3d(1, 0, .33, 90deg);
+    }
+    82.5% {
+        transform: rotate3d(0, -1, -.75, 25deg);
+    }
+    100% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+#scale {
+    transform: scale(2, .5) translate(25px);
+}
+
+#scale:hover {
+    transform: scale(2, 1) translate(25px);
+}
+
+#skew {
+    transform: skew(-32deg, 5deg);
+}
+
+#skew:hover {
+    transform: skew(0.04turn, .032turn);
+}
+
+#translate {
+    transform: translate(500px, -190px);
+}
+
+#translate:hover {
+    transform: translate(525px, -170px);
+}
