@@ -795,7 +795,7 @@ let fetch2 = async() => {
     buildLoadMoreLink();
 };
 
-let reviewsAcordion = document.getElementById("reviews").children[0];
+let reviewsAcordion = document.getElementById("reviewsSection").children[0];
 console.log(reviewsAcordion);
 reviewsAcordion.addEventListener("click", () => {
     if (loadReviews) {
@@ -847,3 +847,14 @@ console.log(buyNowButton);
 buyNowButton.addEventListener('click', (e) => {
     window.location.href = "https://www.amazon.com/exec/obidos/ASIN/1668002175?tag=simonsayscom";
 });
+
+/* let title = document.querySelector("#about>article>div>h2")
+let titleWords = title.textContent.split("FAIRY");
+title.textContent = title.textContent.slice(0, 5);
+let newSpan = document.createElement("span");
+newSpan.textContent = titleWords[1];
+newSpan.classList.add("titleSpan");
+newSpan.style.display = "inline-block";
+
+title.appendChild(newSpan);
+console.log(`split:     "${titleWords}" `); */

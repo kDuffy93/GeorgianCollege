@@ -285,7 +285,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     header>nav>a>img:hover {
-        scale: 1.05;
+        transform: scale(1.05);
     }
     
     .show {
@@ -307,7 +307,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     .nav-link:hover {
         text-decoration: underline;
-        scale: 1.05;
+        transform: scale(1.05);
         color: #f23000;
     }
     
@@ -352,7 +352,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     .mainContent {
         display: grid;
-        grid-template-columns: repeat(1fr, 3);
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "introContent introContent introContent""BookInformation BookInformation BookInformation""reviews reviews reviews";
     }
     
@@ -479,13 +479,13 @@ https://www.phpied.com/delay-loading-your-print-css/
         display: inline-block;
         text-decoration: underline;
         text-decoration-thickness: 1px;
+        display: inline-block;
     }
     
     .titleSpan::first-letter {
         font-family: 'Allura', sans-serif;
         font-size: 65pt;
         vertical-align: sub;
-        font-weight: 600;
     }
     /*about > buy links styling*/
     
@@ -495,7 +495,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     .buyNowButton:hover {
-        scale: 1.05;
+        transform: scale(1.05);
     }
     
     .buyLinks>section {
@@ -527,7 +527,6 @@ https://www.phpied.com/delay-loading-your-print-css/
         margin: 5vh 0;
         display: flex;
         flex-direction: column;
-        align-items: space-evenly;
     }
     
     #about>aside>section>a>img,
@@ -541,7 +540,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     #about>aside>section>a>img:hover,
     #about>article:nth-child(2)>aside>section>a>img:hover {
-        scale: 1.1;
+        transform: scale(1.1);
         border: #333 1px solid;
         background-color: rgba(242, 238, 202, 1);
     }
@@ -616,7 +615,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     #bookInfo .nav-link:hover {
         color: #f23000;
-        scale: 1.2;
+        transform: scale(1.2);
     }
     
     #bookInfo .nav-link.active {
@@ -637,7 +636,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     .accordion-body>div>section>section:first-of-type {
         font-family: 'Akaya Telivigala', cursive;
         font-weight: bold;
-        background-color: rgba(242, 238, 202, 0.404);
+        background-color: rgba(242, 238, 202, 0.5);
         border-radius: 50px;
         padding: 25px;
     }
@@ -720,7 +719,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     
     #authorInformation {
         display: grid;
-        grid-template-columns: repeat(12.5vw, 5);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: "picCard picCard short short short""picCard picCard short short short""Description Description Description Description Description""Description Description Description Description Description";
     }
@@ -730,7 +729,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     #authorInformation>section:nth-of-type(2)>p:nth-of-type(2):hover {
-        scale: 1.1;
+        transform: scale(1.1);
     }
     
     #authorCarousel>div>div>img {
@@ -794,6 +793,10 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     /*-------------------Reviews Section-----------------*/
     
+    #innerAcordion>section>h2 {
+        background-color: rgba(242, 238, 202, 0.404)
+    }
+    
     #innerAcordion>section>section>section>div>section>section:nth-of-type(2) {
         margin: 0;
     }
@@ -807,7 +810,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     }
     
     #loadMoreLink:hover {
-        scale: 1.1;
+        transform: scale(1.1);
         background-color: rgba(242, 238, 202, 0.733)
     }
     
@@ -859,8 +862,8 @@ https://www.phpied.com/delay-loading-your-print-css/
         width: 85vw;
     }
     
-    #reviews>div {
-        padding: var(--bs-accordion-body-padding-y) 0;
+    #reviewsSection>div {
+        padding: 0;
     }
     
     #output {
@@ -1083,6 +1086,7 @@ https://www.phpied.com/delay-loading-your-print-css/
         }
         .titleSpan::first-letter {
             font-size: calc(65pt - .5vw);
+            margin-top: -.5ch;
         }
     }
     /* for the loading spinner in reviews */
@@ -1091,7 +1095,8 @@ https://www.phpied.com/delay-loading-your-print-css/
         animation: spin 1s infinite ease-in-out;
         width: 3vw;
         height: 3vw;
-        background-color: radial-gradient(transparent, #222 75%, transparent 85%);
+        background-color: black;
+        border-radius: 50%;
     }
     
     @keyframes spin {
