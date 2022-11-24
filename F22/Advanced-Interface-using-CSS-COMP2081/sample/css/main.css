@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+}
+
+.firstLetter {
+    animation: Animation .5s ease-in-out infinite;
+    display: inline-block;
+}
+
+.secondLetter {
+    animation: Animation .5s ease-in-out infinite;
+    animation-delay: .1s;
+    display: inline-block;
+}
+
+.thirdLetter {
+    animation: Animation .5s ease-in-out infinite;
+    animation-delay: .2s;
+    display: inline-block;
+}
+
+.fourthLetter {
+    animation: Animation .5s ease-in-out infinite;
+    animation-delay: .3s;
+    display: inline-block;
+}
+
+.fifthLetter {
+    animation: Animation .5s ease-in-out infinite;
+    animation-delay: .4s;
+    display: inline-block;
+}
+
+@keyframes Animation {
+    0% {
+        color: indigo;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: yellow;
+    }
+    100% {
+        color: red;
+    }
+}
