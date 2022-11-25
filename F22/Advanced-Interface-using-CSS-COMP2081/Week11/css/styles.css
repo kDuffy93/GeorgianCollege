@@ -4,7 +4,7 @@
 /* STEP 5: Set the height and width for the SVG element */
 
 svg {
-    height: auto;
+    height: 50%;
     width: 50%;
     border: 1px dotted grey;
 }

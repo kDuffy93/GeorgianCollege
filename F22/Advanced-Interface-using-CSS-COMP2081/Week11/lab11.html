@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 11 - Kyle Duffy | COMP2081 Advanced UI Design Using CSS</title>
+    <link href="./css/barChartStyles.css" rel="stylesheet" />
+    <script src="js/barCharts.js" defer></script>
+    <script type='text/javascript'> window.smartlook||(function(d) { var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0]; var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript'; c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c); })(document); smartlook('init', '4b55f48798d00ff791d519268eabe2699cbb2da9', { region: 'eu' }); </script>
+</head>
+
+<body>
+    <div>
+        <label for="numberOfBarsInput" value="0">Number Of Bars</label>
+        <input type="number" id="numberOfBarsInput" placeholder="Enter The Number Of Bar's you want">
+        <div id="barValues"></div>
+    </div>
+    <div id="svgDiv">
+        <svg xmlns="http://www.w3.org/2000/svg">
+	       	<g></g>
+            <script src="js/barCharts.js"></script>
+        </svg>
+    </div>
+</body>
+
+</html>
