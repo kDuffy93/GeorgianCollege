@@ -1,18 +1,21 @@
-html {}
+html {
+    transition: all 0.25s ease-in-out;
+}
 
 body {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #svgDiv {
     height: 50vh;
-    width: 45vw;
+    width: 40vw;
     margin-top: 2.5vh;
     margin-left: 4vw;
     border: 5px dotted grey;
 }
 
-svg {
+#svgDiv>svg {
     height: inherit;
     width: inherit;
     border: 1px dotted grey;
@@ -21,7 +24,7 @@ svg {
 
 body>div:first-of-type {
     height: 50vh;
-    width: 45vw;
+    width: 40vw;
     margin-left: 4vw;
     margin-top: 20vh;
     border: 1px solid black;
@@ -65,19 +68,10 @@ g {
     width: 50%;
 }
 
-rect:hover {
+#svgDiv>svg>g>rect:hover {
     position: relative;
     fill: red;
     width: calc(var(--barWidth)*1.1);
-}
-
-rect::before {
-    content: "";
-    display: inline-block;
-    cursor: pointer;
-    width: 10px;
-    height: 10px;
-    background-color: blue;
 }
 
 @media (max-width: 1150px) {
@@ -91,4 +85,33 @@ rect::before {
     #barValues>div>div>input {
         width: 100%;
     }
+}
+
+rect+text {
+    fill: green;
+    pointer-events: none;
+}
+
+aside>h1 {
+    text-align: center;
+    padding: 1vh 0 0 0;
+    border-top: solid 1px black;
+}
+
+aside>div {
+    border: 1px solid red;
+    padding: 2.5vmin;
+    border-radius: 50px;
+}
+
+aside>button {
+    margin-bottom: 5px;
+}
+
+aside>button:last-of-type {
+    float: right;
+}
+
+aside>div>div>svg {
+    border: 1px solid black;
 }

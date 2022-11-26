@@ -6,21 +6,65 @@
     <title>Lab 11 - Kyle Duffy | COMP2081 Advanced UI Design Using CSS</title>
     <link href="./css/barChartStyles.css" rel="stylesheet" />
     <script src="js/barCharts.js" defer></script>
-    <script type='text/javascript'> window.smartlook||(function(d) { var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0]; var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript'; c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c); })(document); smartlook('init', '4b55f48798d00ff791d519268eabe2699cbb2da9', { region: 'eu' }); </script>
+    <script type='text/javascript'>
+        window.smartlook || (function(d) {
+            var o = smartlook = function() {
+                    o.api.push(arguments)
+                },
+                h = d.getElementsByTagName('head')[0];
+            var c = d.createElement('script');
+            o.api = new Array();
+            c.async = true;
+            c.type = 'text/javascript';
+            c.charset = 'utf-8';
+            c.src = 'https://web-sdk.smartlook.com/recorder.js';
+            h.appendChild(c);
+        })(document);
+        smartlook('init', '4b55f48798d00ff791d519268eabe2699cbb2da9', {
+            region: 'eu'
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
+
+
     <div>
+        <h1>SVG Bar Chart Code Generator</h1>
         <label for="numberOfBarsInput" value="0">Number Of Bars</label>
         <input type="number" id="numberOfBarsInput" placeholder="Enter The Number Of Bar's you want">
-        <div id="barValues"></div>
+        <div style="width:95%; margin-left:4%;">
+            <div id="barValues"></div>
+        </div>
+
     </div>
     <div id="svgDiv">
-        <svg xmlns="http://www.w3.org/2000/svg">
+        <svg xmlns="http://www.w3.org/2000/svg" style="overflow: visible; height: inherit; width: inherit;">
 	       	<g></g>
             <script src="js/barCharts.js"></script>
         </svg>
     </div>
+
+    <aside style="width:75%; margin-left:12.5%;margin-top:10vh; display:block;">
+        <h1>Generated SVG Code</h1>
+        <button><i class="fa-regular fa-copy"></i>Generate Code</button>
+        <button><i class="fa-regular fa-copy"></i> Copy To Clipboard</button>
+        <div><pre>
+            <code id="svgCodeOutput">
+
+        </code></pre>
+
+            <div id="sampleOutput" style="margin-left:33%; margin-top:2vh;">
+
+            </div>
+        </div>
+
+
+
+    </aside>
+
 </body>
 
 </html>
