@@ -342,9 +342,6 @@ const options2 = {
 let backupFetch = async() => {
     console.log("in backup fetch");
     toggleLoadingSpinner();
-
-
-
     fetch('https://ar7-amazon-scraper-api.p.rapidapi.com/products/1668002175/reviews?api_key=5e646e0590730318444b43c5c6dc5c33', options2)
         .then((response) => response.json())
         .then((response) => {
