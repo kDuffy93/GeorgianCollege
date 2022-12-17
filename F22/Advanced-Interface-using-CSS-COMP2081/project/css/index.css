@@ -1,0 +1,83 @@
+        body>main {
+            display: grid;
+            grid-template-columns: 15% 65% 15%;
+            grid-template-rows: 10h 80vh 10vh;
+            grid-template-areas: "header header header" "leftAside main rightAside" "footer footer footer";
+            column-gap: 2.5%;
+        }
+        
+        body::-webkit-scrollbar {
+            width: 0 !important;
+        }
+        
+        body {
+            overflow: -moz-scrollbars-none;
+        }
+        
+        body {
+            -ms-overflow-style: none;
+        }
+        
+        body>main>section {
+            grid-area: main;
+            background-color: purple;
+        }
+        
+        body>main>section::-webkit-scrollbar {
+            width: 0 !important
+        }
+        
+        body>main>section {
+            overflow: -moz-scrollbars-none;
+        }
+        
+        body>main>section {
+            -ms-overflow-style: none;
+        }
+        
+        body>main>section::-webkit-scrollbar {
+            width: 0 !important;
+        }
+        
+        body>main>aside:first-of-type {
+            grid-area: leftAside;
+            background-color: blue;
+            height: 80vh;
+        }
+        
+        body>main>aside:last-of-type {
+            grid-area: rightAside;
+            background-color: red;
+        }
+        
+        header {
+            grid-area: header;
+            height: 10vh;
+            min-height: 75px;
+        }
+        
+        main {
+            min-height: 80vh;
+        }
+        
+        header>nav>a>img {
+            margin-top: 0.5vh;
+            height: 9vh;
+            min-height: 75px;
+            margin-left: 0.5vh;
+            aspect-ratio: 2.25/1;
+        }
+        
+        .navbar-brand {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        
+        .navbar {
+            padding: 0;
+        }
+        
+        footer {
+            grid-area: footer;
+            height: 10vh;
+        }
