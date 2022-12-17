@@ -1,0 +1,60 @@
+
+/* STEP 1: Declare and use variables */
+
+
+body {
+	
+}
+
+/* STEP 2: Nesting CSS selectors */
+
+
+/* STEP 3: Partials and Importing */
+/* Open reset.css, rename it _reset.scss and put @import 'reset'; at the top of this .scss file */
+
+/* STEP 4: Mixins */
+
+header {
+	
+}
+
+main {
+	
+}
+footer {
+	
+}
+
+/* STEP 5: Extend/Inheritance */
+
+.message {
+	
+}
+.success {
+
+}
+
+.error {
+
+}
+
+.warning {
+
+}
+
+/* STEP 5: Operators */
+main > section { 
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+
+main > section > article {
+
+}
+
+main > section > aside {
+
+}
+
+/* http://sass-lang.com/guide */
