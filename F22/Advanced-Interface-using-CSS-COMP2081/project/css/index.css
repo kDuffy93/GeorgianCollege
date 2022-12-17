@@ -21,7 +21,7 @@
         body>main>section {
             grid-area: main;
             border: solid 1px purple;
-            width: 65vw;
+            width: 62.5vw;
             height: 75vh;
         }
         
@@ -38,10 +38,25 @@
             justify-content: space-evenly;
         }
         
-        body>main>section>section>div {
+        body>main>section>section {
+            margin-left: 5%;
             width: 90%;
-            height: 87.5%;
-            background-color: aqua;
+            height: 85%;
+        }
+        
+        body>main>section>section>div:first-of-type {
+            border: solid 1px black;
+            width: 90%;
+            height: 100%;
+        }
+        
+        body>main>section>section>div:first-of-type>div>h2 {
+            text-align: center;
+        }
+        
+        body>main>section>section>div:last-of-type {
+            width: 10%;
+            height: 100%;
         }
         
         body>main>aside:first-of-type {
@@ -52,6 +67,7 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+            margin-left: 1.25%;
         }
         
         body>main>aside:first-of-type>nav>ul {
@@ -67,6 +83,7 @@
         body>main>aside:last-of-type {
             grid-area: rightAside;
             border: solid 1px red;
+            margin-right: 1.25%;
         }
         
         main {
@@ -99,4 +116,62 @@
             height: 50%;
             width: 100%;
             background-color: pink;
+        }
+        
+        main>aside:nth-of-type(2)>h2 {
+            padding-top: 6pt;
+            text-align: center
+        }
+        
+        main>aside:nth-of-type(2)>button {
+            width: 75%;
+            margin-left: 12.5%;
+        }
+        
+        #cartItems {
+            margin-left: 5%;
+            width: 90%;
+            height: 85%;
+            overflow-y: scroll;
+        }
+        
+        #cartItems>ul {
+            padding: 0
+        }
+        
+        #cartItems>ul>li {
+            list-style: none;
+        }
+        
+        #cartItems>ul>li>article {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(1fr, 6);
+            grid-template-areas: "Name price" "img info" "img info" "img info" "img info" "img info";
+            border: 1px solid black;
+            margin-bottom: 1.5%;
+        }
+        
+        #cartItems>ul>li>article>img {
+            grid-area: img;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #cartItems>ul>li>article>p:first-of-type {
+            grid-area: Name;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #cartItems>ul>li>article>p:nth-of-type(2) {
+            grid-area: price;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #cartItems>ul>li>article>p:last-of-type {
+            grid-area: info;
+            width: 100%;
+            height: 100%;
         }

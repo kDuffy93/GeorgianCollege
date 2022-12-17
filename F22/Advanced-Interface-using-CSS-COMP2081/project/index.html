@@ -56,9 +56,7 @@
                     <li class="nav-item  me-2 ms-2">
                         <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Sign in/up</a>
                     </li>
-                    <li class="nav-item  me-2 ms-2">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Your Cart</a>
-                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -79,9 +77,9 @@
             <nav id="pageNav">
                 <ul class="nav flex-column">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Original Models</a>
-                        <ul class="dropdown-menu nav-item">
-                            <li><a class="dropdown-item nav-link" href="#">Cars</a></li>
+                        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Original Models</a>
+                        <ul class="dropdown-menu nav-item ">
+                            <li><a class="dropdown-item nav-link active" href="#">Cars</a></li>
                             <li><a class="dropdown-item nav-link" href="#">Parts</a></li>
                         </ul>
                     </li>
@@ -104,28 +102,76 @@
         <section>
             <h2>Shop Original Automoblox Sets</h2>
             <section>
-                <div></div>
+                <div class="tab-content" id="tabContentExcerpt">
+                    <div class="tab-pane fade  show active" id="car1" role="tabpanel" aria-labelledby="car2Toggler">
+                        <h2>car1</h2>
+                    </div>
+                    <div class="tab-pane fade" id="car2" role="tabpanel" aria-labelledby="car1Toggler">
+                        <h2>car2</h2>
+                    </div>
+                    <div class="tab-pane fade" id="car3" role="tabpanel" aria-labelledby="car3Toggler">
+                        <h2>car3</h2>
+                    </div>
+                    <div class="tab-pane fade" id="car4" role="tabpanel" aria-labelledby="car4Toggler">
+                        <h2>car4</h2>
+                    </div>
+                    <div class="tab-pane fade" id="car5" role="tabpanel" aria-labelledby="car5Toggler">
+                        <h2>car5</h2>
+                    </div>
+                </div>
+                <div class="tab-pane" id="excerpt" role="tabpanel" aria-labelledby="excerptButton">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="tabButtonsExcerpt" role="tablist" aria-orientation="vertical">
 
+                            <button class="nav-link active" id="car1Toggler" data-bs-toggle="pill" data-bs-target="#car1" type="button" role="tab" aria-controls="car1" aria-selected="true">Title</button>
 
+                            <button class="nav-link" id="car2Toggler" data-bs-toggle="pill" data-bs-target="#car2" type="button" role="tab" aria-controls="car2" aria-selected="false">Title</button>
 
+                            <button class="nav-link" id="car3Toggler" data-bs-toggle="pill" data-bs-target="#car3" type="button" role="tab" aria-controls="car3" aria-selected="false">Title</button>
+
+                            <button class="nav-link" id="car4Toggler" data-bs-toggle="pill" data-bs-target="#car4" type="button" role="tab" aria-controls="car4" aria-selected="false">Title</button>
+
+                            <button class="nav-link" id="car5Toggler" data-bs-toggle="pill" data-bs-target="#car5" type="button" role="tab" aria-controls="car5" aria-selected="false">Title</button>
+                        </div>
+
+                    </div>
             </section>
         </section>
         <aside>
-            <ul class="nav flex-column nav-pills">
-                <super style="width:100%; text-align:center; padding-bottom:2%;"><u>these links actually work</u></super>
-                <li class="nav-item ">
-                    <a class="nav-link active " href="# ">Active</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="# ">Link</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="# ">Link</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link disabled " href="# ">Disabled</a>
-                </li>
-            </ul>
+
+
+            <h2 class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> <u>Your Cart</u></h2>
+            <hr/>
+            <section id="cartItems">
+                <ul>
+                    <li>
+                        <article>
+                            <img src="#" />
+                            <p>item 1</p>
+                            <p>$ price1</p>
+                            <p>Description1</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="#" />
+                            <p>item 2</p>
+                            <p>$ price2</p>
+                            <p>Description2</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="#" />
+                            <p>item 2</p>
+                            <p>$ price2</p>
+                            <p>Description2</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <button>Check Out Now</button>
+
         </aside>
     </main>
 
