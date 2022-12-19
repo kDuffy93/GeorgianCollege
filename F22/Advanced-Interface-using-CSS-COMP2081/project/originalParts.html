@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Project-KyleDuffy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts-->
+    <!--Scripts-->
+    <script src="scripts/index.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+            <a class="navbar-brand" href="#"><img src="./images/automoblox_logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#globalNav" aria-controls="globalNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="globalNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item me-2 ms-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item me-2 ms-2">
+                        <a class="nav-link active" href="#"><i class="fa-solid fa-basket-shopping"></i> Shop</a>
+                    </li>
+                    <li class="nav-item  me-2 ms-2">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-leanpub"></i> Learn</a>
+                    </li>
+                    <li class="nav-item  me-2 ms-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-car-burst"></i> Play</a>
+                    </li>
+                    <li class="nav-item  me-2 ms-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Sign in/up</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#">Shop</a></li>
+                <li class="breadcrumb-item"><a href="#">Original Models</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Parts</li>
+            </ol>
+        </nav>
+
+    </aside>
+    <main>
+        <aside>
+            <nav id="pageNav">
+                <ul class="nav flex-column">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Original Models</a>
+                        <ul class="dropdown-menu nav-item ">
+                            <li><a class="dropdown-item nav-link" href="./originalCars.html">Cars</a></li>
+                            <li><a class="dropdown-item nav-link active" href="./originalParts.html">Parts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mini's</a>
+                        <ul class="dropdown-menu nav-item">
+                            <li><a class="dropdown-item nav-link" href="./miniCars.html">Cars</a></li>
+                            <li><a class="dropdown-item nav-link" href="./miniParts.html">Parts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./apparel.html">Apparel</a>
+                    </li>
+                </ul>
+            </nav>
+            <article class="leftAsideAd">
+
+            </article>
+        </aside>
+        <section>
+            <h2>Shop Original Automoblox Parts</h2>
+            <section>
+                <div class="tab-content" id="tabContentExcerpt">
+                    <div class="tab-pane fade  show active" id="car1" role="tabpanel" aria-labelledby="car2Toggler">
+                        <h2>part1</h2>
+                    </div>
+                    <div class="tab-pane fade" id="car2" role="tabpanel" aria-labelledby="car1Toggler">
+                        <h2>part2</h2>
+                    </div>
+                    <div class="tab-pane fade" id="car3" role="tabpanel" aria-labelledby="car3Toggler">
+                        <h2>part3</h2>
+                    </div>
+                    <div class="tab-pane fade" id="car4" role="tabpanel" aria-labelledby="car4Toggler">
+                        <h2>part4</h2>
+                    </div>
+                    <div class="tab-pane fade" id="car5" role="tabpanel" aria-labelledby="car5Toggler">
+                        <h2>part5</h2>
+                    </div>
+                </div>
+                <div class="tab-pane" id="excerpt" role="tabpanel" aria-labelledby="excerptButton">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="tabButtonsExcerpt" role="tablist" aria-orientation="vertical">
+
+                            <button class="nav-link active" id="car1Toggler" data-bs-toggle="pill" data-bs-target="#car1" type="button" role="tab" aria-controls="car1" aria-selected="true">Title</button>
+
+                            <button class="nav-link" id="car2Toggler" data-bs-toggle="pill" data-bs-target="#car2" type="button" role="tab" aria-controls="car2" aria-selected="false">Title</button>
+
+                            <button class="nav-link" id="car3Toggler" data-bs-toggle="pill" data-bs-target="#car3" type="button" role="tab" aria-controls="car3" aria-selected="false">Title</button>
+
+                            <button class="nav-link" id="car4Toggler" data-bs-toggle="pill" data-bs-target="#car4" type="button" role="tab" aria-controls="car4" aria-selected="false">Title</button>
+
+                            <button class="nav-link" id="car5Toggler" data-bs-toggle="pill" data-bs-target="#car5" type="button" role="tab" aria-controls="car5" aria-selected="false">Title</button>
+                        </div>
+
+                    </div>
+            </section>
+        </section>
+        <aside>
+
+
+            <h2 class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> <u>Your Cart</u></h2>
+            <hr/>
+            <section id="cartItems">
+                <ul>
+                    <li>
+                        <article>
+                            <img src="#" />
+                            <p>item 1</p>
+                            <p>$ price1</p>
+                            <p>Description1</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="#" />
+                            <p>item 2</p>
+                            <p>$ price2</p>
+                            <p>Description2</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="#" />
+                            <p>item 2</p>
+                            <p>$ price2</p>
+                            <p>Description2</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <button>Check Out Now</button>
+
+        </aside>
+    </main>
+
+    <footer>&copy; Kyle Duffy 2022</footer>
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js "></script>
+    <script src="js/plugins.js "></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js "></script>
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js " integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js " integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk " crossorigin="anonymous "></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js " async=" "></script>
+</body>
+
+</html>
